@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Meraki by Nandita",
-  description: "Handcrafted Mandala, Lippan and Art Creations",
+  description: "Handcrafted Mandala Art, Lippan Art, Paintings and Custom Home Decor.",
 };
 
 export default function RootLayout({
