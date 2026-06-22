@@ -23,26 +23,133 @@ export default function Home() {
       </header>
 
       <section className="max-w-7xl mx-auto px-6 py-20">
-        <h2 className="text-6xl font-bold mb-6 text-gray-900">
-          Handmade Art That Tells A Story
-        </h2>
+    <div className="grid md:grid-cols-2 gap-12 items-center">
 
-        <p className="text-xl max-w-3xl mb-10 text-gray-700">
-          Discover handcrafted Mandala Art, Lippan Art,
-          Paintings and Home Décor lovingly created by
-          Meraki by Nandita and shipped worldwide.
+    <div>
+      <h2 className="text-6xl font-bold mb-6 text-gray-900">
+  Handcrafted Art That Brings Your Walls To Life
+</h2>
+
+<p className="text-xl max-w-3xl mb-10 text-gray-700">
+  Discover unique Mandala Art, Lippan Art and custom creations
+  handcrafted by Nandita. Every piece is designed to add warmth,
+  beauty and personality to your home.
+</p>
+
+<section className="bg-white py-12">
+  <div className="max-w-7xl mx-auto px-6">
+
+    <div className="grid md:grid-cols-4 gap-8 text-center">
+
+      <div>
+        <h3 className="font-semibold text-lg">
+          Handmade With Love
+        </h3>
+      </div>
+
+      <div>
+        <h3 className="font-semibold text-lg">
+          Custom Orders Available
+        </h3>
+      </div>
+
+      <div>
+        <h3 className="font-semibold text-lg">
+          Secure Payments
+        </h3>
+      </div>
+
+      <div>
+        <h3 className="font-semibold text-lg">
+          Across India Shipping
+        </h3>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section className="bg-white py-20">
+  <div className="max-w-7xl mx-auto px-6">
+
+    <h2 className="text-4xl font-bold text-center mb-12">
+      Our Collections
+    </h2>
+
+    <div className="grid md:grid-cols-4 gap-6">
+
+      <div className="bg-[#FFF9F5] p-6 rounded-xl text-center">
+        <h3 className="font-semibold text-xl mb-2">
+          Mandala Art
+        </h3>
+        <p className="text-gray-600">
+          Intricate handcrafted mandala creations.
         </p>
+      </div>
 
-        <div className="flex gap-4">
-          <button className="bg-pink-500 text-white px-6 py-3 rounded-lg">
-            Shop Collection
-          </button>
+      <div className="bg-[#FFF9F5] p-6 rounded-xl text-center">
+        <h3 className="font-semibold text-xl mb-2">
+          Lippan Art
+        </h3>
+        <p className="text-gray-600">
+          Traditional mirror work for modern homes.
+        </p>
+      </div>
 
-          <button className="border border-green-600 px-6 py-3 rounded-lg">
-            Custom Order
-          </button>
-        </div>
-      </section>
+      <div className="bg-[#FFF9F5] p-6 rounded-xl text-center">
+        <h3 className="font-semibold text-xl mb-2">
+          Paintings
+        </h3>
+        <p className="text-gray-600">
+          Unique artworks for every space.
+        </p>
+      </div>
+
+      <div className="bg-[#FFF9F5] p-6 rounded-xl text-center">
+        <h3 className="font-semibold text-xl mb-2">
+          Custom Orders
+        </h3>
+        <p className="text-gray-600">
+          Personalized art made just for you.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+      <div className="flex gap-4">
+        <a
+  href="/shop"
+  className="bg-pink-500 text-white px-6 py-3 rounded-lg"
+>
+  Shop Collection
+</a>
+
+<a
+  href="https://wa.me/918007801123"
+  target="_blank"
+  className="border border-green-600 px-6 py-3 rounded-lg"
+>
+  Custom Order
+</a>
+      </div>
+    </div>
+
+    <div>
+      <Image
+        src="/images/hero-art.jpg"
+        alt="Featured Artwork"
+        width={600}
+        height={600}
+        className="rounded-3xl shadow-lg"
+      />
+    </div>
+
+  </div>
+</section>
     </main>
   )
 }
