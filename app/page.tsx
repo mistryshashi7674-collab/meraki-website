@@ -206,16 +206,28 @@ export default function Home() {
             Instagram.
           </p>
 
-          <a
-            href="https://www.instagram.com/meraki_nandita_/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-pink-600 hover:text-pink-700"
-          >
-            <FaInstagram size={28} />
-          </a>
+          <div className="flex justify-center">
+            <a
+              href="https://www.instagram.com/meraki_nandita_/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-pink-500 text-white px-8 py-4 rounded-xl font-semibold hover:bg-pink-600"
+            >
+              <FaInstagram size={24} />
+              Follow @meraki_nandita_
+            </a>
+          </div>
         </div>
       </section>
+
+      <a
+        href="https://www.instagram.com/meraki_nandita_/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-24 right-6 bg-pink-500 text-white p-4 rounded-full shadow-lg z-50"
+      >
+        <FaInstagram size={32} />
+      </a>
 
       <a
         href="https://wa.me/918007801123"
