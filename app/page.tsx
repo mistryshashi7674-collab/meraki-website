@@ -42,7 +42,7 @@ export default function Home() {
     <div className="grid md:grid-cols-4 gap-8 text-center">
 
       <div>
-        <h3 className="font-semibold text-lg">
+        <h3 className="font-semibold text-lg text-slate-900">
           Handmade With Love
         </h3>
       </div>
@@ -120,22 +120,23 @@ export default function Home() {
   </div>
 </section>
 
-      <div className="flex gap-4">
-        <a
-  href="/shop"
-  className="bg-pink-500 text-white px-6 py-3 rounded-lg"
->
-  Shop Collection
-</a>
+      <div className="flex gap-4 mt-8">
+  <a
+    href="/shop"
+    className="bg-pink-500 text-white px-6 py-3 rounded-lg"
+  >
+    Shop Collection
+  </a>
 
-<a
-  href="https://wa.me/918007801123"
-  target="_blank"
-  className="border border-green-600 px-6 py-3 rounded-lg"
->
-  Custom Order
-</a>
-      </div>
+  <a
+    href="https://wa.me/918007801123"
+    target="_blank"
+    className="border border-green-600 px-6 py-3 rounded-lg"
+  >
+    Custom Order
+  </a>
+</div>
+
     </div>
 
     <div>
