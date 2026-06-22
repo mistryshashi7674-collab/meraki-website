@@ -219,9 +219,9 @@ export default function Home() {
         href="https://wa.me/918007801123"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 bg-green-500 text-white px-5 py-4 rounded-full shadow-lg hover:shadow-xl z-50"
+        className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:shadow-xl z-50"
       >
-        WhatsApp
+        <FaWhatsapp size={36} />
       </a>
 
       <footer className="bg-slate-900 text-white py-12 mt-20">
@@ -271,7 +271,14 @@ export default function Home() {
                   target="_blank"
                   className="text-gray-300 hover:text-white"
                 >
-                  <FaWhatsapp size={32} />
+                  <a
+                    href="https://wa.me/918007801123"
+                    target="_blank"
+                    className="text-gray-300 hover:text-white flex items-center gap-2"
+                  >
+                    <FaWhatsapp size={20} />
+                    WhatsApp
+                  </a>
                 </a>
               </div>
             </div>
