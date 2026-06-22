@@ -13,11 +13,11 @@ export default function Home() {
           />
 
           <nav className="text-gray-800 font-medium">
-            <a href="#">Home</a>
-            <a href="#">Shop</a>
-            <a href="#">Gallery</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <a href="#" className="text-gray-800 font-medium">Home</a>
+            <a href="#" className="text-gray-800 font-medium">Shop</a>
+            <a href="#" className="text-gray-800 font-medium">Gallery</a>
+            <a href="#" className="text-gray-800 font-medium">About</a>
+            <a href="#" className="text-gray-800 font-medium">Contact</a>
           </nav>
         </div>
       </header>
