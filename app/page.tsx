@@ -12,9 +12,9 @@ export default function Home() {
             height={120}
           />
 
-          <nav className="text-gray-800 font-medium">
+          <nav className="flex gap-6">
             <a href="#" className="text-gray-800 font-medium">Home</a>
-            <a href="#" className="text-gray-800 font-medium">Shop</a>
+            <a href="/shop" className="text-gray-800 font-medium">Shop</a>
             <a href="#" className="text-gray-800 font-medium">Gallery</a>
             <a href="#" className="text-gray-800 font-medium">About</a>
             <a href="#" className="text-gray-800 font-medium">Contact</a>
