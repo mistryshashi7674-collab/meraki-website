@@ -120,6 +120,44 @@ export default function Home() {
   </div>
 </section>
 
+<section className="bg-[#FFF9F5] py-20">
+  <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+    <div>
+      <Image
+        src="/images/nandita.jpg"
+        alt="Nandita creating artwork"
+        width={500}
+        height={600}
+        className="rounded-2xl shadow-lg"
+      />
+    </div>
+
+    <div>
+      <h2 className="text-4xl font-bold mb-6 text-gray-900">
+        Meet The Artist
+      </h2>
+
+      <p className="text-lg text-gray-700 mb-4">
+        Meraki by Nandita was born from a passion for creating meaningful,
+        handcrafted art that transforms everyday spaces into beautiful homes.
+      </p>
+
+      <p className="text-lg text-gray-700 mb-4">
+        From intricate Mandala artwork to traditional Lippan creations,
+        every piece is thoughtfully designed and handcrafted with attention
+        to detail and love.
+      </p>
+
+      <p className="text-lg text-gray-700">
+        Based in Chennai, Nandita creates unique art pieces, custom gifts,
+        and home décor that bring warmth, beauty and personality to every space.
+      </p>
+    </div>
+
+  </div>
+</section>
+
       <div className="flex gap-4 mt-8">
   <a
     href="/shop"
