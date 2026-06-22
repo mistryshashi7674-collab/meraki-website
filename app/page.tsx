@@ -34,9 +34,9 @@ export default function Home() {
               href="https://www.instagram.com/meraki_nandita_/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-pink-500 text-white px-4 py-2 rounded-lg"
+              className="text-pink-500 hover:text-pink-600"
             >
-              Instagram
+              <FaInstagram size={28} />
             </a>
           </nav>
         </div>
@@ -273,16 +273,11 @@ export default function Home() {
                 <a
                   href="https://wa.me/918007801123"
                   target="_blank"
-                  className="text-gray-300 hover:text-white"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-white flex items-center gap-2"
                 >
-                  <a
-                    href="https://wa.me/918007801123"
-                    target="_blank"
-                    className="text-gray-300 hover:text-white flex items-center gap-2"
-                  >
-                    <FaWhatsapp size={20} />
-                    WhatsApp
-                  </a>
+                  <FaWhatsapp size={20} />
+                  WhatsApp
                 </a>
               </div>
             </div>
