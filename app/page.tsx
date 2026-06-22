@@ -148,7 +148,9 @@ export default function Home() {
               <h3 className="font-semibold text-xl mb-2 text-slate-900">
                 Custom Orders
               </h3>
-              <p>Personalized art made just for you.</p>
+              <p className="text-sm text-gray-700">
+                Personalized art made just for you.
+              </p>
             </div>
           </div>
         </div>
