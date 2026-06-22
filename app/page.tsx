@@ -30,14 +30,6 @@ export default function Home() {
               Contact
             </a>
 
-            <a
-              href="https://www.instagram.com/meraki_nandita_/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-pink-500 hover:text-pink-600"
-            >
-              <FaInstagram size={28} />
-            </a>
           </nav>
         </div>
       </header>
