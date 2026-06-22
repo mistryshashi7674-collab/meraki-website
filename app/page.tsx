@@ -106,22 +106,22 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-6">
 
             <div className="bg-white p-6 rounded-xl text-center shadow">
-              <h3 className="font-semibold text-xl mb-2">Mandala Art</h3>
+              <h3 className="font-semibold text-xl mb-2 text-slate-900">Mandala Art</h3>
               <p>Intricate handcrafted mandala creations.</p>
             </div>
 
             <div className="bg-white p-6 rounded-xl text-center shadow">
-              <h3 className="font-semibold text-xl mb-2">Lippan Art</h3>
+              <h3 className="font-semibold text-xl mb-2 text-slate-900">Lippan Art</h3>
               <p>Traditional mirror work for modern homes.</p>
             </div>
 
             <div className="bg-white p-6 rounded-xl text-center shadow">
-              <h3 className="font-semibold text-xl mb-2">Paintings</h3>
+              <h3 className="font-semibold text-xl mb-2 text-slate-900">Paintings</h3>
               <p>Unique artworks for every space.</p>
             </div>
 
             <div className="bg-white p-6 rounded-xl text-center shadow">
-              <h3 className="font-semibold text-xl mb-2">Custom Orders</h3>
+              <h3 className="font-semibold text-xl mb-2 text-slate-900">Custom Orders</h3>
               <p>Personalized art made just for you.</p>
             </div>
 
