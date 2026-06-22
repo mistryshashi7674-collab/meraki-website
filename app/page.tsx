@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -270,7 +271,7 @@ export default function Home() {
                   target="_blank"
                   className="text-gray-300 hover:text-white"
                 >
-                  WhatsApp
+                  <FaWhatsapp size={32} />
                 </a>
               </div>
             </div>
