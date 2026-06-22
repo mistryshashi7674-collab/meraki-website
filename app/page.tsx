@@ -112,17 +112,17 @@ export default function Home() {
 
             <div className="bg-white p-6 rounded-xl text-center shadow">
               <h3 className="font-semibold text-xl mb-2 text-slate-900">Lippan Art</h3>
-              <p>Traditional mirror work for modern homes.</p>
+              <p className="text-sm text-gray-700">Traditional mirror work for modern homes.</p>
             </div>
 
             <div className="bg-white p-6 rounded-xl text-center shadow">
               <h3 className="font-semibold text-xl mb-2 text-slate-900">Paintings</h3>
-              <p>Unique artworks for every space.</p>
+              <p className="text-sm text-gray-700">Unique artworks for every space.</p>
             </div>
 
             <div className="bg-white p-6 rounded-xl text-center shadow">
               <h3 className="font-semibold text-xl mb-2 text-slate-900">Custom Orders</h3>
-              <p>Personalized art made just for you.</p>
+              <p className="text-sm text-gray-700">Personalized art made just for you.</p>
             </div>
 
           </div>
