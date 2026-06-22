@@ -48,19 +48,19 @@ export default function Home() {
       </div>
 
       <div>
-        <h3 className="font-semibold text-lg">
+        <h3 className="font-semibold text-lg text-slate-900">
           Custom Orders Available
         </h3>
       </div>
 
       <div>
-        <h3 className="font-semibold text-lg">
+        <h3 className="font-semibold text-lg text-slate-900">
           Secure Payments
         </h3>
       </div>
 
       <div>
-        <h3 className="font-semibold text-lg">
+        <h3 className="font-semibold text-lg text-slate-900">
           Across India Shipping
         </h3>
       </div>
@@ -73,14 +73,14 @@ export default function Home() {
 <section className="bg-white py-20">
   <div className="max-w-7xl mx-auto px-6">
 
-    <h2 className="text-4xl font-bold text-center mb-12">
+    <h2 className="text-4xl font-bold text-center mb-12 text-slate-900">
       Our Collections
     </h2>
 
     <div className="grid md:grid-cols-4 gap-6">
 
       <div className="bg-[#FFF9F5] p-6 rounded-xl text-center">
-        <h3 className="font-semibold text-xl mb-2">
+        <h3 className="font-semibold text-xl mb-2 text-slate-900">
           Mandala Art
         </h3>
         <p className="text-gray-600">
@@ -89,7 +89,7 @@ export default function Home() {
       </div>
 
       <div className="bg-[#FFF9F5] p-6 rounded-xl text-center">
-        <h3 className="font-semibold text-xl mb-2">
+        <h3 className="font-semibold text-xl mb-2 text-slate-900">
           Lippan Art
         </h3>
         <p className="text-gray-600">
@@ -98,7 +98,7 @@ export default function Home() {
       </div>
 
       <div className="bg-[#FFF9F5] p-6 rounded-xl text-center">
-        <h3 className="font-semibold text-xl mb-2">
+        <h3 className="font-semibold text-xl mb-2 text-slate-900">
           Paintings
         </h3>
         <p className="text-gray-600">
@@ -107,7 +107,7 @@ export default function Home() {
       </div>
 
       <div className="bg-[#FFF9F5] p-6 rounded-xl text-center">
-        <h3 className="font-semibold text-xl mb-2">
+        <h3 className="font-semibold text-xl mb-2 text-slate-900">
           Custom Orders
         </h3>
         <p className="text-gray-600">
