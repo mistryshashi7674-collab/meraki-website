@@ -8,8 +8,8 @@ export default function Home() {
           <Image
             src="/images/logo.png"
             alt="Meraki by Nandita"
-            width={180}
-            height={180}
+            width={120}
+            height={120}
           />
 
           <nav className="text-gray-800 font-medium">
