@@ -12,7 +12,7 @@ export default function Home() {
             height={180}
           />
 
-          <nav className="flex gap-6">
+          <nav className="text-gray-800 font-medium">
             <a href="#">Home</a>
             <a href="#">Shop</a>
             <a href="#">Gallery</a>
@@ -23,11 +23,11 @@ export default function Home() {
       </header>
 
       <section className="max-w-7xl mx-auto px-6 py-20">
-        <h2 className="text-6xl font-bold mb-6">
+        <h2 className="text-6xl font-bold mb-6 text-gray-900">
           Handmade Art That Tells A Story
         </h2>
 
-        <p className="text-xl max-w-3xl mb-10">
+        <p className="text-xl max-w-3xl mb-10 text-gray-700">
           Discover handcrafted Mandala Art, Lippan Art,
           Paintings and Home Décor lovingly created by
           Meraki by Nandita and shipped worldwide.
