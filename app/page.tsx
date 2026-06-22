@@ -107,7 +107,7 @@ export default function Home() {
 
             <div className="bg-white p-6 rounded-xl text-center shadow">
               <h3 className="font-semibold text-xl mb-2 text-slate-900">Mandala Art</h3>
-              <p>Intricate handcrafted mandala creations.</p>
+              <p className="text-sm text-gray-700">Intricate handcrafted mandala creations.</p>
             </div>
 
             <div className="bg-white p-6 rounded-xl text-center shadow">
