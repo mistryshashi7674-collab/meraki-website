@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -210,9 +210,9 @@ export default function Home() {
             href="https://www.instagram.com/meraki_nandita_/"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-pink-500 text-white px-8 py-4 rounded-lg text-lg"
+            className="text-pink-600 hover:text-pink-700"
           >
-            Follow @meraki_nandita_
+            <FaInstagram size={28} />
           </a>
         </div>
       </section>
@@ -263,8 +263,10 @@ export default function Home() {
                 <a
                   href="https://www.instagram.com/meraki_nandita_/"
                   target="_blank"
-                  className="text-gray-300 hover:text-white"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-white flex items-center gap-2"
                 >
+                  <FaInstagram size={20} />
                   Instagram
                 </a>
 
