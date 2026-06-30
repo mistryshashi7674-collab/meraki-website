@@ -41,7 +41,7 @@ export default function Home() {
               <a
                 href="https://wa.me/918007801123"
                 target="_blank"
-                className="border border-green-600 hover:bg-green-50 transition duration-300 text-gray-600 px-6 py-3 rounded-lg"
+                className="border border-green-600 hover:bg-green-50 hover:scale-105 transition duration-300 text-gray-600 px-6 py-3 rounded-lg"
               >
                 Request Custom Artwork
               </a>
