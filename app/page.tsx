@@ -95,53 +95,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Collections */}
-      <section className="bg-[#FFF9F5] py-20">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-12 text-slate-900">
-            Our Collections
-          </h2>
-
-          <div className="grid md:grid-cols-4 gap-6">
-            <div className="bg-white p-6 rounded-xl text-center shadow">
-              <h3 className="font-semibold text-xl mb-2 text-slate-900">
-                Mandala Art
-              </h3>
-              <p className="text-sm text-gray-700">
-                Intricate handcrafted mandala creations.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl text-center shadow">
-              <h3 className="font-semibold text-xl mb-2 text-slate-900">
-                Lippan Art
-              </h3>
-              <p className="text-sm text-gray-700">
-                Traditional mirror work for modern homes.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl text-center shadow">
-              <h3 className="font-semibold text-xl mb-2 text-slate-900">
-                Paintings
-              </h3>
-              <p className="text-sm text-gray-700">
-                Unique artworks for every space.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl text-center shadow">
-              <h3 className="font-semibold text-xl mb-2 text-slate-900">
-                Custom Orders
-              </h3>
-              <p className="text-sm text-gray-700">
-                Personalized art made just for you.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Meet the Artist */}
       <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">

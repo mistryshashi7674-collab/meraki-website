@@ -47,7 +47,7 @@ export default function FeaturedCollections() {
                   alt={item.title}
                   width={500}
                   height={500}
-                  className="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+                  className="w-full h-96 object-cover group-hover:scale-110 transition duration-700"
                 />
               </div>
 
