@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://merakinandita.in"),
@@ -41,6 +42,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: "Meraki by Nandita",
+
     description:
       "Handcrafted Mandala, Lippan and Canvas Art for beautiful homes.",
 
@@ -67,7 +69,8 @@ export const metadata: Metadata = {
 
     title: "Meraki by Nandita",
 
-    description: "Handcrafted Mandala, Lippan and Canvas Art by Nandita.",
+    description:
+      "Handcrafted Mandala, Lippan and Canvas Art by Nandita.",
 
     images: ["/images/hero-art.jpg"],
   },
@@ -81,3 +84,41 @@ export const metadata: Metadata = {
     icon: "/icon.png",
   },
 };
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "Meraki by Nandita",
+    image: "https://merakinandita.in/images/hero-art.jpg",
+    url: "https://merakinandita.in",
+    telephone: "+918007801123",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Chennai",
+      addressRegion: "Tamil Nadu",
+      addressCountry: "IN",
+    },
+    sameAs: [
+      "https://www.instagram.com/meraki_nandita_/",
+    ],
+  };
+
+  return (
+    <html lang="en">
+      <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd),
+          }}
+        />
+        {children}
+      </body>
+    </html>
+  );
+}
