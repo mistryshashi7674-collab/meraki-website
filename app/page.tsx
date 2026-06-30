@@ -30,7 +30,7 @@ export default function Home() {
               detail.
             </p>
 
-            <div className="flex gap-4">
+            <div className="mt-10 flex flex-wrap gap-4">
               <a
                 href="/shop"
                 className="bg-pink-500 text-white px-6 py-3 rounded-lg"
@@ -46,14 +46,14 @@ export default function Home() {
                 Request Custom Artwork
               </a>
             </div>
-          </div>
 
-          <div className="mt-10 flex flex-wrap gap-6 text-gray-600 text-sm">
-            <div>✔ Handmade by Nandita</div>
+            <div className="mt-8 flex flex-wrap gap-5 text-sm font-medium text-gray-600">
+              <div>✔ Handmade by Nandita</div>
 
-            <div>✔ Pan India Shipping</div>
+              <div>✔ Pan India Shipping</div>
 
-            <div>✔ Custom Orders Welcome</div>
+              <div>✔ Custom Orders Welcome</div>
+            </div>
           </div>
 
           <div>
