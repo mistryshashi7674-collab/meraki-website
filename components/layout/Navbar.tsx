@@ -5,15 +5,15 @@ import { FaWhatsapp } from "react-icons/fa";
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-8 py-5">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-8 py-3">
 
         {/* Logo */}
         <Link href="/">
           <Image
             src="/images/logo.png"
             alt="Meraki by Nandita"
-            width={110}
-            height={110}
+            width={70}
+            height={70}
             priority
             className="cursor-pointer"
           />
