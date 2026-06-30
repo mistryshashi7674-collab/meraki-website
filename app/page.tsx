@@ -74,29 +74,6 @@ export default function Home() {
       <FeaturedCollections/> 
       <WhyChooseMeraki />
 
-      {/* Trust Section */}
-      <section className="bg-white py-12">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid md:grid-cols-4 gap-8 text-center">
-            <h3 className="font-semibold text-lg text-slate-900">
-              Handmade With Love
-            </h3>
-
-            <h3 className="font-semibold text-lg text-slate-900">
-              Custom Orders Available
-            </h3>
-
-            <h3 className="font-semibold text-lg text-slate-900">
-              Secure Payments
-            </h3>
-
-            <h3 className="font-semibold text-lg text-slate-900">
-              Across India Shipping
-            </h3>
-          </div>
-        </div>
-      </section>
-
       {/* Meet the Artist */}
       <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
