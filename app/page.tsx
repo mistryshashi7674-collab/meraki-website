@@ -33,7 +33,7 @@ export default function Home() {
             <div className="mt-10 flex flex-wrap gap-4">
               <a
                 href="/shop"
-                className="bg-pink-500 text-white px-6 py-3 rounded-lg"
+                className="bg-pink-500 hover:bg-pink-600 hover:scale-105 transition duration-300 text-white px-6 py-3 rounded-lg"
               >
                 Explore Collection
               </a>
@@ -41,7 +41,7 @@ export default function Home() {
               <a
                 href="https://wa.me/918007801123"
                 target="_blank"
-                className="border border-green-600 hover:bg-stone-100 transition text-gray-600 px-6 py-3 rounded-lg"
+                className="border border-green-600 hover:bg-green-50 transition duration-300 text-gray-600 px-6 py-3 rounded-lg"
               >
                 Request Custom Artwork
               </a>
@@ -62,7 +62,7 @@ export default function Home() {
               alt="Featured Artwork"
               width={600}
               height={600}
-              className="rounded-3xl shadow-2xl hover:scale-[1.02] transition duration-500"
+              className="rounded-3xl shadow-2xl hover:scale-[1.02] transition-all duration-500"
             />
           </div>
           <div className="-mt-6"></div>
