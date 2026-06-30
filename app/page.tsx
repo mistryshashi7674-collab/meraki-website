@@ -206,7 +206,7 @@ export default function Home() {
                     href="mailto:nandita296@gmail.com"
                     className="hover:text-pink-400"
                   >
-                    ✉ hello@merakinandita.in
+                    ✉ Reach me on Email
                   </a>
                 
                 </p>
