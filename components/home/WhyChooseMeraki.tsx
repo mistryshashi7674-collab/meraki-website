@@ -33,12 +33,6 @@ export default function WhyChooseMeraki() {
             WHY MERAKI
           </p>
 
-          <h2 className="mt-3 text-4xl font-bold text-gray-900">
-            Why Choose
-            <br />
-            Meraki by Nandita
-          </h2>
-
           <p className="mt-6 max-w-2xl mx-auto text-gray-600 text-lg">
             Every artwork is thoughtfully handcrafted to transform ordinary
             spaces into beautiful homes filled with personality.
@@ -64,7 +58,9 @@ export default function WhyChooseMeraki() {
                 {feature.icon}
               </div>
 
-              <h3 className="mt-6 text-xl font-semibold">{feature.title}</h3>
+              <h3 className="text-2xl font-bold text-gray-900">
+                {feature.title}
+              </h3>
 
               <p className="mt-4 text-gray-600 leading-7">
                 {feature.description}
