@@ -15,7 +15,6 @@ export default function Home() {
       <section className="max-w-7xl mx-auto px-6 py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-
             <h1 className="text-5xl md:text-6xl font-bold leading-tight text-gray-900">
               Handmade Mandala, Lippan & Acrylic Painting
               <br />
@@ -23,7 +22,11 @@ export default function Home() {
             </h1>
 
             <p className="mt-8 text-xl text-gray-600 leading-9 max-w-xl">
-              Discover handcrafted Mandala Art, Lippan Art and Canvas Paintings designed to bring warmth, elegance and personality to your home. Based in Chennai, Meraki by Nandita creates custom wall décor, personalized artwork and handmade gifts that are crafted with care and delivered across India.
+              Discover handcrafted Mandala Art, Lippan Art and Canvas Paintings
+              designed to bring warmth, elegance and personality to your home.
+              Based in Chennai, Meraki by Nandita creates custom wall décor,
+              personalized artwork and handmade gifts that are crafted with care
+              and delivered across India.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -101,6 +104,49 @@ export default function Home() {
               Based in Chennai, I also create personalised artwork for homes,
               offices and gifting. Every piece is made with care, creativity and
               attention to detail.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* SEO Content Section */}
+      <section className="bg-[#FFF9F5] py-20">
+        <div className="max-w-5xl mx-auto px-6">
+          <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">
+            Handmade Mandala Art, Lippan Art & Custom Wall Décor
+          </h2>
+
+          <div className="space-y-6 text-lg leading-8 text-gray-700">
+            <p>
+              Welcome to <strong>Meraki by Nandita</strong>, where every artwork
+              is handcrafted with creativity, patience and attention to detail.
+              We specialise in handmade <strong>Mandala Art</strong>,
+              <strong> Lippan Art</strong> and
+              <strong> Canvas Paintings</strong> that transform ordinary walls
+              into beautiful spaces full of warmth and personality.
+            </p>
+
+            <p>
+              Based in <strong>Chennai</strong>, we create unique wall décor for
+              homes, offices and gifting. Whether you're decorating your living
+              room, bedroom, entrance, pooja room or workspace, our handcrafted
+              artwork is designed to reflect your personal style while adding
+              elegance to your interiors.
+            </p>
+
+            <p>
+              Every piece is carefully made by Nandita using quality materials
+              and traditional techniques with a modern artistic touch. We also
+              offer personalised and custom-made artwork tailored to your
+              preferred size, colours and design, making every creation truly
+              one of a kind.
+            </p>
+
+            <p>
+              We proudly deliver our handmade artwork across India and are
+              passionate about helping customers discover meaningful home décor
+              and thoughtful handmade gifts for housewarmings, weddings,
+              birthdays, anniversaries and corporate gifting.
             </p>
           </div>
         </div>
@@ -208,7 +254,6 @@ export default function Home() {
                   >
                     ✉ Reach me on Email
                   </a>
-                
                 </p>
               </div>
             </div>
