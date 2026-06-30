@@ -5,21 +5,21 @@ import Navbar from "@/components/layout/Navbar";
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#FFF9F5]">
-      
       <Navbar />
 
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-6 py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h1 className="text-6xl font-bold mb-6 text-gray-900">
-              Handcrafted Art That Brings Your Walls To Life
+            <h1 className="text-5xl md:text-6xl font-bold leading-tight text-gray-900">
+              Transform Empty Walls
+              <br />
+              Into Beautiful Stories
             </h1>
 
-            <p className="text-xl mb-10 text-gray-700">
-              Discover unique Mandala Art, Lippan Art and custom creations
-              handcrafted by Nandita. Every piece is designed to add warmth,
-              beauty and personality to your home.
+            <p className="mt-8 text-xl text-gray-600 leading-8 max-w-xl">
+              Handcrafted Mandala, Lippan and Canvas Art designed to add warmth,
+              elegance and personality to every home.
             </p>
 
             <div className="flex gap-4">
@@ -27,7 +27,7 @@ export default function Home() {
                 href="/shop"
                 className="bg-pink-500 text-white px-6 py-3 rounded-lg"
               >
-                Shop Collection
+                Explore Collection
               </a>
 
               <a
@@ -35,7 +35,7 @@ export default function Home() {
                 target="_blank"
                 className="border border-green-600 text-gray-600 px-6 py-3 rounded-lg"
               >
-                Custom Order
+                Request Custom Artwork
               </a>
             </div>
           </div>
