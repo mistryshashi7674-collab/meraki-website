@@ -1,3 +1,4 @@
+import AnnouncementBar from "@/components/layout/announcement-bar";
 import Image from "next/image";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 import Navbar from "@/components/layout/Navbar";
@@ -5,6 +6,7 @@ import Navbar from "@/components/layout/Navbar";
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#FFF9F5]">
+      <AnnouncementBar />
       <Navbar />
 
       {/* Hero Section */}
