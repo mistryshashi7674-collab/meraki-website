@@ -2,6 +2,7 @@ import AnnouncementBar from "@/components/layout/announcement-bar";
 import Image from "next/image";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 import Navbar from "@/components/layout/Navbar";
+import FeaturedCollections from "@/components/home/FeaturedCollections";
 
 export default function Home() {
   return (
@@ -68,6 +69,8 @@ export default function Home() {
           <div className="-mt-6"></div>
         </div>
       </section>
+
+      <FeaturedCollections/> 
 
       {/* Trust Section */}
       <section className="bg-white py-12">
