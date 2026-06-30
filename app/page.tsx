@@ -71,7 +71,7 @@ export default function Home() {
         </div>
       </section>
 
-      <FeaturedCollections/> 
+      <FeaturedCollections />
       <WhyChooseMeraki />
 
       {/* Meet the Artist */}
@@ -83,31 +83,30 @@ export default function Home() {
               alt="Nandita"
               width={500}
               height={600}
-              className="rounded-2xl shadow-lg"
+              className="rounded-3xl shadow-2xl object-cover"
             />
           </div>
 
           <div>
             <h2 className="text-4xl font-bold mb-6 text-gray-900">
-              Meet The Artist
+              Meet the Artist Behind Meraki
             </h2>
 
-            <p className="text-lg text-gray-700 mb-4">
-              Meraki by Nandita was born from a passion for creating meaningful,
-              handcrafted art that transforms everyday spaces into beautiful
-              homes.
+            <h3 className="text-3xl font-bold text-gray-900">
+              Hi, I'm Nandita 👋
+            </h3>
+
+            <p className="mt-6 text-lg text-gray-600 leading-8">
+              Meraki was born from my love for creating art that transforms
+              ordinary walls into meaningful spaces. Every Mandala, Lippan and
+              Canvas artwork is handcrafted patiently, bringing warmth, elegance
+              and personality into every home.
             </p>
 
-            <p className="text-lg text-gray-700 mb-4">
-              From intricate Mandala artwork to traditional Lippan creations,
-              every piece is thoughtfully designed and handcrafted with
-              attention to detail and love.
-            </p>
-
-            <p className="text-lg text-gray-700">
-              Based in Chennai, Nandita creates unique art pieces, custom gifts,
-              and home décor that bring warmth, beauty and personality to every
-              space.
+            <p className="mt-6 text-lg text-gray-600 leading-8">
+              Based in Chennai, I also create personalised artwork for homes,
+              offices and gifting. Every piece is made with care, creativity and
+              attention to detail.
             </p>
           </div>
         </div>
