@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Hero from "@/components/mandala/Hero";
+import Gallery from "@/components/mandala/Gallery";
 
 export const metadata: Metadata = {
   title:
@@ -57,6 +58,7 @@ export default function MandalaArtPage() {
   return (
     <main className="min-h-screen bg-[#FFF9F5]">
       <Hero />
+      <Gallery />
     </main>
   );
 }
