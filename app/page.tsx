@@ -3,6 +3,7 @@ import Image from "next/image";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 import Navbar from "@/components/layout/Navbar";
 import FeaturedCollections from "@/components/home/FeaturedCollections";
+import WhyChooseMeraki from "@/components/home/WhyChooseMeraki";
 
 export default function Home() {
   return (
@@ -71,6 +72,7 @@ export default function Home() {
       </section>
 
       <FeaturedCollections/> 
+      <WhyChooseMeraki />
 
       {/* Trust Section */}
       <section className="bg-white py-12">
