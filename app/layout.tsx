@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://merakinandita.in"),
@@ -69,8 +70,7 @@ export const metadata: Metadata = {
 
     title: "Meraki by Nandita",
 
-    description:
-      "Handcrafted Mandala, Lippan and Canvas Art by Nandita.",
+    description: "Handcrafted Mandala, Lippan and Canvas Art by Nandita.",
 
     images: ["/images/hero-art.jpg"],
   },
@@ -103,9 +103,7 @@ export default function RootLayout({
       addressRegion: "Tamil Nadu",
       addressCountry: "IN",
     },
-    sameAs: [
-      "https://www.instagram.com/meraki_nandita_/",
-    ],
+    sameAs: ["https://www.instagram.com/meraki_nandita_/"],
   };
 
   return (
@@ -117,7 +115,10 @@ export default function RootLayout({
             __html: JSON.stringify(jsonLd),
           }}
         />
+
         {children}
+
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID!} />
       </body>
     </html>
   );
