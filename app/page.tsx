@@ -15,9 +15,6 @@ export default function Home() {
       <section className="max-w-7xl mx-auto px-6 py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="inline-flex items-center rounded-full bg-amber-100 text-amber-800 px-4 py-2 text-sm font-medium mb-6">
-              🌿 Handcrafted in Chennai
-            </div>
 
             <h1 className="text-5xl md:text-6xl font-bold leading-tight text-gray-900">
               Transform Empty Walls
