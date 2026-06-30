@@ -13,15 +13,21 @@ export default function Home() {
       <section className="max-w-7xl mx-auto px-6 py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
+            <div className="inline-flex items-center rounded-full bg-amber-100 text-amber-800 px-4 py-2 text-sm font-medium mb-6">
+              🌿 Handcrafted in Chennai
+            </div>
+
             <h1 className="text-5xl md:text-6xl font-bold leading-tight text-gray-900">
               Transform Empty Walls
               <br />
               Into Beautiful Stories
             </h1>
 
-            <p className="mt-8 text-xl text-gray-600 leading-8 max-w-xl">
-              Handcrafted Mandala, Lippan and Canvas Art designed to add warmth,
-              elegance and personality to every home.
+            <p className="mt-8 text-xl text-gray-600 leading-9 max-w-xl">
+              Discover handcrafted Mandala, Lippan and Canvas Art designed to
+              bring warmth, elegance and personality into your home. Every piece
+              is thoughtfully created by Nandita with love and attention to
+              detail.
             </p>
 
             <div className="flex gap-4">
@@ -40,6 +46,14 @@ export default function Home() {
                 Request Custom Artwork
               </a>
             </div>
+          </div>
+
+          <div className="mt-10 flex flex-wrap gap-6 text-gray-600 text-sm">
+            <div>✔ Handmade by Nandita</div>
+
+            <div>✔ Pan India Shipping</div>
+
+            <div>✔ Custom Orders Welcome</div>
           </div>
 
           <div>
