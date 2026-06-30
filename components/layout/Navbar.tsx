@@ -4,43 +4,46 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-8 py-5">
 
         {/* Logo */}
         <Link href="/">
           <Image
             src="/images/logo.png"
             alt="Meraki by Nandita"
-            width={90}
-            height={90}
+            width={110}
+            height={110}
             priority
+            className="cursor-pointer"
           />
         </Link>
 
         {/* Navigation */}
-        <nav className="hidden md:flex items-center gap-8 text-sm tracking-wide uppercase">
-          <Link href="/" className="hover:text-amber-700 transition">
+        <nav className="hidden md:flex items-center gap-10 text-[15px] font-medium text-stone-700">
+
+          <Link href="/" className="hover:text-pink-600 transition-colors duration-300">
             Home
           </Link>
 
-          <Link href="/shop" className="hover:text-amber-700 transition">
+          <Link href="/shop" className="hover:text-pink-600 transition-colors duration-300">
             Shop
           </Link>
 
-          <a href="#" className="hover:text-amber-700 transition">
+          <Link href="#" className="hover:text-pink-600 transition-colors duration-300">
             Collections
-          </a>
+          </Link>
 
-          <a href="#" className="hover:text-amber-700 transition">
+          <Link href="#" className="hover:text-pink-600 transition-colors duration-300">
             About
-          </a>
+          </Link>
+
         </nav>
 
-        {/* WhatsApp Button */}
+        {/* WhatsApp */}
         <a
           href="https://wa.me/YOURNUMBER"
-          className="text-green-600 hover:scale-110 transition"
+          className="text-green-600 hover:scale-110 transition-transform duration-300"
         >
           <FaWhatsapp size={28} />
         </a>
