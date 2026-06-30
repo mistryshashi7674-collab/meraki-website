@@ -156,7 +156,7 @@ export default function Home() {
       </a>
 
       <footer className="bg-[#1E2433] text-white mt-24">
-        <div className="max-w-7xl mx-auto px-6 py-16">
+        <div className="max-w-7xl mx-auto px-6 py-20">
           <div className="grid md:grid-cols-4 gap-12">
             {/* Brand */}
             <div>
@@ -207,7 +207,15 @@ export default function Home() {
                   </a>
                 </p>
 
-                <p>✉ hello@merakinandita.in</p>
+                <p>
+                  <a
+                    href="mailto:hello@merakinandita.in"
+                    className="hover:text-pink-400"
+                  >
+                    ✉ hello@merakinandita.in
+                  </a>
+                
+                </p>
               </div>
             </div>
 
@@ -219,7 +227,7 @@ export default function Home() {
                 <a
                   href="https://instagram.com/meraki_nandita_"
                   target="_blank"
-                  className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-pink-500 transition"
+                  className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center transition duration-300 hover:scale-110 hover:bg-pink-500 transition"
                 >
                   <FaInstagram size={22} />
                 </a>
@@ -227,7 +235,7 @@ export default function Home() {
                 <a
                   href="https://wa.me/918007801123"
                   target="_blank"
-                  className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-green-500 transition"
+                  className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center transition duration-300 hover:scale-110 hover:bg-green-500 transition"
                 >
                   <FaWhatsapp size={22} />
                 </a>
@@ -240,7 +248,9 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
             <p>© 2026 Meraki by Nandita. All rights reserved.</p>
 
-            <p className="mt-4 md:mt-0">Crafted with ❤️ by Nandita in Chennai</p>
+            <p className="mt-4 md:mt-0">
+              Crafted with ❤️ by Nandita in Chennai
+            </p>
           </div>
         </div>
       </footer>
