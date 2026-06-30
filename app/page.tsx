@@ -5,6 +5,7 @@ import Navbar from "@/components/layout/Navbar";
 import FeaturedCollections from "@/components/home/FeaturedCollections";
 import WhyChooseMeraki from "@/components/home/WhyChooseMeraki";
 
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#FFF9F5]">
@@ -148,6 +149,69 @@ export default function Home() {
               and thoughtful handmade gifts for housewarmings, weddings,
               birthdays, anniversaries and corporate gifting.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="bg-white py-20">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">
+            Frequently Asked Questions
+          </h2>
+
+          <div className="space-y-8">
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900">
+                Do you create custom artwork?
+              </h3>
+              <p className="mt-2 text-gray-700 leading-7">
+                Yes. Every artwork can be customised based on your preferred
+                size, colours, design and décor style. We love creating unique
+                pieces that perfectly match your space.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900">
+                Do you ship across India?
+              </h3>
+              <p className="mt-2 text-gray-700 leading-7">
+                Yes. We carefully package every handmade artwork and offer Pan
+                India shipping so your order reaches you safely.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900">
+                How long does it take to complete a custom order?
+              </h3>
+              <p className="mt-2 text-gray-700 leading-7">
+                Depending on the size and complexity of the artwork, custom
+                orders generally take between 7 and 21 days to complete.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900">
+                What types of artwork do you create?
+              </h3>
+              <p className="mt-2 text-gray-700 leading-7">
+                We specialise in Mandala Art, Lippan Art, Canvas Paintings and
+                personalised wall décor for homes, offices and gifting.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900">
+                How can I place an order?
+              </h3>
+              <p className="mt-2 text-gray-700 leading-7">
+                You can browse our collection on the website or contact us
+                directly through WhatsApp or Instagram for personalised
+                assistance and custom artwork requests.
+              </p>
+            </div>
           </div>
         </div>
       </section>
