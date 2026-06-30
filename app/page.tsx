@@ -203,7 +203,7 @@ export default function Home() {
 
                 <p>
                   <a
-                    href="mailto:hello@merakinandita.in"
+                    href="mailto:nandita296@gmail.com"
                     className="hover:text-pink-400"
                   >
                     ✉ hello@merakinandita.in
