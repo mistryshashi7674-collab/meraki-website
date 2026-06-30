@@ -155,65 +155,92 @@ export default function Home() {
         <FaWhatsapp size={36} />
       </a>
 
-      <footer className="bg-slate-900 text-white py-12 mt-20">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid md:grid-cols-3 gap-10">
+      <footer className="bg-[#1E2433] text-white mt-24">
+        <div className="max-w-7xl mx-auto px-6 py-16">
+          <div className="grid md:grid-cols-4 gap-12">
+            {/* Brand */}
             <div>
-              <h3 className="text-2xl font-bold mb-4">Meraki by Nandita</h3>
+              <h3 className="text-2xl font-bold">Meraki by Nandita</h3>
 
-              <p className="text-gray-300">
-                Handcrafted Mandala Art, Lippan Art, Paintings and Custom Home
-                Décor.
+              <p className="mt-5 text-gray-300 leading-7">
+                Handcrafted Mandala Art, Lippan Art and Canvas Paintings created
+                with love in Chennai. Bringing warmth, elegance and personality
+                to every home.
               </p>
             </div>
 
+            {/* Quick Links */}
             <div>
-              <h4 className="font-semibold mb-4">Quick Links</h4>
+              <h4 className="font-semibold text-lg mb-5">Quick Links</h4>
 
-              <div className="flex flex-col gap-2">
-                <a href="/" className="text-gray-300 hover:text-white">
-                  Home
-                </a>
+              <ul className="space-y-3 text-gray-300">
+                <li>
+                  <a href="/">Home</a>
+                </li>
+                <li>
+                  <a href="/shop">Shop</a>
+                </li>
+                <li>
+                  <a href="/collections">Collections</a>
+                </li>
+                <li>
+                  <a href="/about">About</a>
+                </li>
+              </ul>
+            </div>
 
-                <a href="/shop" className="text-gray-300 hover:text-white">
-                  Shop
-                </a>
+            {/* Contact */}
+            <div>
+              <h4 className="font-semibold text-lg mb-5">Contact</h4>
 
-                <a href="#" className="text-gray-300 hover:text-white">
-                  Gallery
-                </a>
+              <div className="space-y-3 text-gray-300">
+                <p>📍 Chennai, India</p>
+
+                <p>
+                  📱
+                  <a
+                    href="https://wa.me/918007801123"
+                    target="_blank"
+                    className="hover:text-pink-400"
+                  >
+                    WhatsApp
+                  </a>
+                </p>
+
+                <p>✉ hello@merakinandita.in</p>
               </div>
             </div>
 
+            {/* Follow */}
             <div>
-              <h4 className="font-semibold mb-4">Connect With Us</h4>
+              <h4 className="font-semibold text-lg mb-5">Follow Us</h4>
 
-              <div className="flex flex-col gap-2">
+              <div className="flex gap-4">
                 <a
-                  href="https://www.instagram.com/meraki_nandita_/"
+                  href="https://instagram.com/meraki_nandita_"
                   target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-white flex items-center gap-2"
+                  className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-pink-500 transition"
                 >
-                  <FaInstagram size={20} />
-                  Instagram
+                  <FaInstagram size={22} />
                 </a>
 
                 <a
                   href="https://wa.me/918007801123"
                   target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-white flex items-center gap-2"
+                  className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-green-500 transition"
                 >
-                  <FaWhatsapp size={20} />
-                  WhatsApp
+                  <FaWhatsapp size={22} />
                 </a>
               </div>
             </div>
           </div>
 
-          <div className="border-t border-slate-700 mt-8 pt-6 text-center text-gray-400">
-            © 2026 Meraki by Nandita. All rights reserved.
+          <hr className="my-10 border-gray-700" />
+
+          <div className="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
+            <p>© 2026 Meraki by Nandita. All rights reserved.</p>
+
+            <p className="mt-4 md:mt-0">Handmade with ❤️ in Chennai</p>
           </div>
         </div>
       </footer>
