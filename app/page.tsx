@@ -41,7 +41,7 @@ export default function Home() {
               <a
                 href="https://wa.me/918007801123"
                 target="_blank"
-                className="border border-green-600 text-gray-600 px-6 py-3 rounded-lg"
+                className="border border-green-600 hover:bg-stone-100 transition text-gray-600 px-6 py-3 rounded-lg"
               >
                 Request Custom Artwork
               </a>
@@ -62,9 +62,10 @@ export default function Home() {
               alt="Featured Artwork"
               width={600}
               height={600}
-              className="rounded-3xl shadow-lg"
+              className="rounded-3xl shadow-2xl hover:scale-[1.02] transition duration-500"
             />
           </div>
+          <div className="-mt-6"></div>
         </div>
       </section>
 
