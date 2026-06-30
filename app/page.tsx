@@ -17,16 +17,13 @@ export default function Home() {
           <div>
 
             <h1 className="text-5xl md:text-6xl font-bold leading-tight text-gray-900">
-              Transform Empty Walls
+              Handmade Mandala, Lippan & Acrylic Painting
               <br />
-              Into Beautiful Stories
+              For Beautiful Homes
             </h1>
 
             <p className="mt-8 text-xl text-gray-600 leading-9 max-w-xl">
-              Discover handcrafted Mandala, Lippan and Canvas Art designed to
-              bring warmth, elegance and personality into your home. Every piece
-              is thoughtfully created by Nandita with love and attention to
-              detail.
+              Discover handcrafted Mandala Art, Lippan Art and Canvas Paintings designed to bring warmth, elegance and personality to your home. Based in Chennai, Meraki by Nandita creates custom wall décor, personalized artwork and handmade gifts that are crafted with care and delivered across India.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -58,7 +55,7 @@ export default function Home() {
           <div>
             <Image
               src="/images/hero-art.jpg"
-              alt="Featured Artwork"
+              alt="Handmade Mandala and Lippan wall art by Meraki by Nandita"
               width={600}
               height={600}
               className="rounded-3xl shadow-2xl hover:scale-[1.02] transition-all duration-500"
@@ -77,7 +74,7 @@ export default function Home() {
           <div>
             <Image
               src="/images/nandita.jpg"
-              alt="Nandita"
+              alt="Nandita, founder and artist of Meraki by Nandita in Chennai"
               width={500}
               height={600}
               className="rounded-3xl shadow-2xl object-cover"

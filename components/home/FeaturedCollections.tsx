@@ -13,7 +13,7 @@ const collections = [
     image: "/images/hero-art.jpg",
   },
   {
-    title: "Canvas Paintings",
+    title: "Acrylic Paintings",
     description: "Unique handmade paintings for every interior style.",
     image: "/images/hero-art.jpg",
   },

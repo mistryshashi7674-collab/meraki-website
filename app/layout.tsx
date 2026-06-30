@@ -6,19 +6,24 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://merakinandita.in"),
 
   title: {
-    default: "Meraki by Nandita | Handmade Mandala, Lippan & Canvas Art",
+    default:
+      "Handmade Mandala & Lippan Art in Chennai | Custom Wall Decor | Meraki by Nandita",
     template: "%s | Meraki by Nandita",
   },
 
   description:
-    "Discover handcrafted Mandala Art, Lippan Art and Canvas Paintings by Nandita. Custom artwork, personalized home décor and Pan India delivery.",
+    "Discover handmade Mandala Art, Lippan Art, Mirror Mosaic, Acrylic Paintings and custom wall decor by Nandita in Chennai. Personalized artwork, home decor and handmade gifts with Pan India delivery.",
 
   keywords: [
+    "Handmade Mandala Art",
     "Mandala Art Chennai",
     "Lippan Art Chennai",
+    "Lippan Wall Decor",
+    "Mirror Mosaic Art",
     "Mandala Painting",
     "Lippan Wall Decor",
-    "Canvas Paintings",
+    "Custom Wall Decor",
+    "Acrylic Paintings",
     "Handmade Wall Decor India",
     "Custom Mandala Art",
     "Personalized Wall Art",
