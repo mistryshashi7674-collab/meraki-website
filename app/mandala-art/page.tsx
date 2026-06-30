@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Hero from "@/components/mandala/Hero";
 import Gallery from "@/components/mandala/Gallery";
 import AboutMandala from "@/components/mandala/AboutMandala";
+import WhyChoose from "@/components/mandala/WhyChoose";
 
 export const metadata: Metadata = {
   title:
@@ -61,6 +62,7 @@ export default function MandalaArtPage() {
       <Hero />
       <Gallery />
       <AboutMandala />
+      <WhyChoose />
     </main>
   );
 }
