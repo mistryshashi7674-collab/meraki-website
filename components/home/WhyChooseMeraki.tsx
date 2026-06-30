@@ -14,8 +14,7 @@ const features = [
   {
     icon: "🚚",
     title: "Pan India Delivery",
-    description:
-      "Secure packaging and reliable shipping across India.",
+    description: "Secure packaging and reliable shipping across India.",
   },
   {
     icon: "❤️",
@@ -27,11 +26,9 @@ const features = [
 
 export default function WhyChooseMeraki() {
   return (
-    <section className="py-24 bg-[#FFF9F5]">
+    <section className="py-16 bg-[#FFF9F5]">
       <div className="max-w-7xl mx-auto px-6">
-
         <div className="text-center">
-
           <p className="text-pink-500 font-semibold uppercase tracking-widest">
             WHY MERAKI
           </p>
@@ -46,13 +43,10 @@ export default function WhyChooseMeraki() {
             Every artwork is thoughtfully handcrafted to transform ordinary
             spaces into beautiful homes filled with personality.
           </p>
-
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
-
           {features.map((feature) => (
-
             <div
               key={feature.title}
               className="
@@ -66,25 +60,18 @@ export default function WhyChooseMeraki() {
                 duration-300
               "
             >
-
-              <div className="text-5xl">
+              <div className="w-16 h-16 rounded-full bg-pink-100 flex items-center justify-center text-3xl">
                 {feature.icon}
               </div>
 
-              <h3 className="mt-6 text-xl font-semibold">
-                {feature.title}
-              </h3>
+              <h3 className="mt-6 text-xl font-semibold">{feature.title}</h3>
 
               <p className="mt-4 text-gray-600 leading-7">
                 {feature.description}
               </p>
-
             </div>
-
           ))}
-
         </div>
-
       </div>
     </section>
   );

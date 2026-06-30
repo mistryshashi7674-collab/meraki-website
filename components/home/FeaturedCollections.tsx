@@ -32,7 +32,7 @@ export default function FeaturedCollections() {
           timeless.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-10 mt-16">
+        <div className="grid md:grid-cols-3 gap-10 mt-20">
 
           {collections.map((item) => (
 
