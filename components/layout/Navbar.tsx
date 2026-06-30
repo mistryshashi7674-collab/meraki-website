@@ -12,8 +12,8 @@ export default function Navbar() {
           <Image
             src="/images/logo.png"
             alt="Meraki by Nandita"
-            width={70}
-            height={70}
+            width={130}
+            height={130}
             priority
             className="cursor-pointer"
           />
