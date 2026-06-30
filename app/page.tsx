@@ -1,38 +1,12 @@
 import Image from "next/image";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
+import Navbar from "@/components/layout/Navbar";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#FFF9F5]">
-      <header className="border-b bg-white">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <Image
-            src="/images/logo.png"
-            alt="Meraki by Nandita"
-            width={120}
-            height={120}
-          />
-
-          <nav className="flex gap-6 items-center">
-            <a href="#" className="text-gray-800 font-medium">
-              Home
-            </a>
-            <a href="/shop" className="text-gray-800 font-medium">
-              Shop
-            </a>
-            <a href="#" className="text-gray-800 font-medium">
-              Gallery
-            </a>
-            <a href="#" className="text-gray-800 font-medium">
-              About
-            </a>
-            <a href="#" className="text-gray-800 font-medium">
-              Contact
-            </a>
-
-          </nav>
-        </div>
-      </header>
+      
+      <Navbar />
 
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-6 py-20">
