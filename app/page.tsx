@@ -240,7 +240,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
             <p>© 2026 Meraki by Nandita. All rights reserved.</p>
 
-            <p className="mt-4 md:mt-0">Handmade with ❤️ in Chennai</p>
+            <p className="mt-4 md:mt-0">Crafted with ❤️ by Nandita in Chennai</p>
           </div>
         </div>
       </footer>
