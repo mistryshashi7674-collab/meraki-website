@@ -19,7 +19,7 @@ export default function Navbar() {
         </Link>
 
         {/* Navigation */}
-        <nav className="hidden md:flex items-center gap-12 text-[15px] font-medium text-stone-700">
+        <nav className="hidden md:flex items-center gap-12 text-[17px] font-medium text-stone-700">
           <Link
             href="/"
             className="hover:text-pink-600 transition-colors duration-300"
