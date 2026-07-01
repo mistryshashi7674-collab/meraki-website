@@ -4,6 +4,7 @@ import Gallery from "@/components/mandala/Gallery";
 import AboutMandala from "@/components/mandala/AboutMandala";
 import WhyChoose from "@/components/mandala/WhyChoose";
 
+
 export const metadata: Metadata = {
   title:
     "Handmade Mandala Art in Chennai | Custom Wall Decor | Meraki by Nandita",
