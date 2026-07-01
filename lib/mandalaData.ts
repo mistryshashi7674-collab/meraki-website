@@ -1,33 +1,32 @@
 export const mandalaArt = [
   {
     id: 1,
-    title: "Ornate Mandala Art",
-    description:
-      "Handcrafted mandala artwork perfect for living rooms and modern interiors.",
-    image: "/images/mandala/ornate-asthetic.jpg",
-    alt: "Ornate handmade mandala wall art",
-    size: '10" x 10"',
-  },
 
-  {
-    id: 2,
-    title: "Black & Pink Mandala",
-    description:
-      "Elegant handcrafted mandala with black and pink detailing.",
-    image: "/images/mandala/Blackpink-sofa.jpg",
-    alt: "Black and pink mandala artwork",
-    size: '10" x 10"',
-  },
+    slug: "yellow-mandala",
 
-  {
-    id: 3,
-    title: "Golden Mandala",
-    description:
-      "Premium yellow handcrafted mandala artwork.",
-    image: "/images/mandala/Yellow-Hallway.jpg",
-    alt: "Golden handmade mandala art",
-    size: '10" x 10"',
-  },
+    title: "Golden Mandala Art",
 
-  // Continue adding all your images...
+    description:
+      "Handcrafted Mandala artwork featuring elegant gold detailing, perfect for modern homes and gifting.",
+
+    price: "₹2,499",
+
+    size: '10" x 10"',
+
+    frame: "Premium Wooden Frame",
+
+    medium: "Acrylic on MDF",
+
+    available: true,
+
+    images: [
+      "/images/mandala/yellow-mandala/Yellow mandala original.jpg",
+      "/images/mandala/yellow-mandala/Yellow-asthetic.jpg",
+      "/images/mandala/yellow-mandala/Yellow-dinnertable.jpg",
+      "/images/mandala/yellow-mandala/Yellow-Hallway.jpg",
+      "/images/mandala/yellow-mandala/yellow-mandala.jpg",
+      "/images/mandala/yellow-mandala/Yellow-studyroom.jpg",
+      "/images/mandala/yellow-mandala/Yellow-whitebackground.jpg"
+    ],
+  },
 ];
