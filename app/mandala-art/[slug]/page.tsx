@@ -33,8 +33,39 @@ export default async function ProductPage({ params }: Props) {
     )
     .slice(0, 4);
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.merakinandita.in",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Mandala Art",
+        item: "https://www.merakinandita.in/mandala-art",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: artwork.title,
+        item: `https://www.merakinandita.in/mandala-art/${artwork.slug}`,
+      },
+    ],
+  };
+
   return (
     <main className="max-w-7xl mx-auto px-6 py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
+        }}
+      />
       <ProductBreadcrumb title={artwork.title} />
       <div className="grid lg:grid-cols-5 gap-20 items-start">
         {/* LEFT COLUMN */}
