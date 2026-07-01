@@ -12,11 +12,11 @@ export const mandalaArt = [
     available: true,
 
     images: [
-      "/images/mandala/yellow-mandala/yellow-asthetic.jpg",
+      "/images/mandala/yellow-mandala/yellow-studyroom.jpg",
       "/images/mandala/yellow-mandala/yellow-mandala-original.jpg",
       "/images/mandala/yellow-mandala/yellow-mandala.jpg",
       "/images/mandala/yellow-mandala/yellow-hallway.jpg",
-      "/images/mandala/yellow-mandala/yellow-studyroom.jpg",
+      "/images/mandala/yellow-mandala/yellow-asthetic.jpg",
       "/images/mandala/yellow-mandala/yellow-dinnertable.jpg",
       "/images/mandala/yellow-mandala/yellow-white-background.jpg",
     ],
@@ -35,11 +35,11 @@ export const mandalaArt = [
     available: true,
 
     images: [
-      "/images/mandala/black-mandala/black-hallroom.jpg",
+      "/images/mandala/black-mandala/black-poojaroom.jpg",
       "/images/mandala/black-mandala/black-mandala-original.jpg",
       "/images/mandala/black-mandala/black-livingroom.jpg",
       "/images/mandala/black-mandala/black-bedroom.jpg",
-      "/images/mandala/black-mandala/black-poojaroom.jpg",
+      "/images/mandala/black-mandala/black-hallroom.jpg",
       "/images/mandala/black-mandala/black-closeup.jpg",
       "/images/mandala/black-mandala/black-white-background.jpg",
     ],
