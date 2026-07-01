@@ -4,7 +4,6 @@ import Gallery from "@/components/mandala/Gallery";
 import AboutMandala from "@/components/mandala/AboutMandala";
 import WhyChoose from "@/components/mandala/WhyChoose";
 
-
 export const metadata: Metadata = {
   title:
     "Handmade Mandala Art in Chennai | Custom Wall Decor | Meraki by Nandita",
@@ -58,8 +57,33 @@ export const metadata: Metadata = {
 };
 
 export default function MandalaArtPage() {
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://merakinandita.in",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Mandala Art",
+        item: "https://merakinandita.in/mandala-art",
+      },
+    ],
+  };
+
   return (
     <main className="min-h-screen bg-[#FFF9F5]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
+        }}
+      />
       <Hero />
       <Gallery />
       <AboutMandala />
