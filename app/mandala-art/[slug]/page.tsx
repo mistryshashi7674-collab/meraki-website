@@ -1,11 +1,55 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { mandalaArt } from "@/lib/mandalaData";
 import { notFound } from "next/navigation";
 import ProductGallery from "@/components/product/ProductGallery";
 import Link from "next/link";
 import ProductBreadcrumb from "@/components/product/ProductBreadcrumb";
-import ProductSchema from "@/components/seo/ProductSchema"; 
+import ProductSchema from "@/components/seo/ProductSchema";
 
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+
+  const artwork = mandalaArt.find((item) => item.slug === slug);
+
+  if (!artwork) {
+    return {};
+  }
+
+  const url = `https://www.merakinandita.in/mandala-art/${artwork.slug}`;
+
+  return {
+    title: `${artwork.title} | Meraki by Nandita`,
+    description: artwork.description,
+
+    alternates: {
+      canonical: url,
+    },
+
+    openGraph: {
+      title: artwork.title,
+      description: artwork.description,
+      url,
+      images: [
+        {
+          url: `https://www.merakinandita.in${artwork.images[0]}`,
+        },
+      ],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: artwork.title,
+      description: artwork.description,
+      images: [`https://www.merakinandita.in${artwork.images[0]}`],
+    },
+  };
+}
 type Props = {
   params: Promise<{
     slug: string;
