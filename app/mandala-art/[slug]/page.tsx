@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import ProductGallery from "@/components/product/ProductGallery";
 import Link from "next/link";
 import ProductBreadcrumb from "@/components/product/ProductBreadcrumb";
+import ProductSchema from "@/components/seo/ProductSchema"; 
 
 type Props = {
   params: Promise<{
@@ -66,6 +67,7 @@ export default async function ProductPage({ params }: Props) {
           __html: JSON.stringify(breadcrumbSchema),
         }}
       />
+      <ProductSchema artwork={artwork} />
       <ProductBreadcrumb title={artwork.title} />
       <div className="grid lg:grid-cols-5 gap-20 items-start">
         {/* LEFT COLUMN */}
