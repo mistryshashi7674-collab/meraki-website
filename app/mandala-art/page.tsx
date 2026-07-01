@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "/images/swastic-poojaroom.jpg",
+        url: "/images/mandala/swastic-poojaroom.jpg",
         width: 1200,
         height: 630,
         alt: "Handmade Mandala Art by Meraki by Nandita",
