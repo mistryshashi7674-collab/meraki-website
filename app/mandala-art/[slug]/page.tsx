@@ -26,8 +26,11 @@ export default async function ProductPage({ params }: Props) {
   const whatsappUrl = `https://wa.me/918007801123?text=${whatsappMessage}`;
 
   const relatedProducts = mandalaArt
-    .filter((item) => item.slug !== artwork.slug)
-    .slice(0, 3);
+    .filter(
+      (item) =>
+        item.slug !== artwork.slug && item.category === artwork.category,
+    )
+    .slice(0, 4);
 
   return (
     <main className="max-w-7xl mx-auto px-6 py-16">
@@ -72,7 +75,7 @@ export default async function ProductPage({ params }: Props) {
       </div>
 
       <section className="mt-24">
-        <h2 className="text-3xl font-bold mb-8">You may also like</h2>
+        <h2 className="text-3xl font-bold mb-8">Explore more Mandala Artwork</h2>
 
         <div className="grid md:grid-cols-3 gap-8">
           {relatedProducts.map((item) => (

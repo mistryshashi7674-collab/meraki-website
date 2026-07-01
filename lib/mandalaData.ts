@@ -3,6 +3,7 @@ export const mandalaArt = [
     id: 1,
     slug: "yellow-mandala",
     title: "Golden Mandala Art",
+    category: "Mandala",
     description:
       "Handcrafted golden mandala artwork perfect for living rooms, bedrooms and gifting.",
     price: 2499,
@@ -26,6 +27,7 @@ export const mandalaArt = [
     id: 2,
     slug: "black-mandala",
     title: "Black & White Mandala Art",
+    category: "Mandala",
     description:
       "Elegant black and white handcrafted mandala artwork for modern interiors.",
     price: 2499,
@@ -49,6 +51,7 @@ export const mandalaArt = [
     id: 3,
     slug: "black-pink-mandala",
     title: "Black & Pink Mandala Art",
+    category: "Mandala",
     description:
       "Beautiful handcrafted mandala with elegant black and pink detailing.",
     price: 2499,
@@ -72,6 +75,7 @@ export const mandalaArt = [
     id: 4,
     slug: "ornate-mandala",
     title: "Ornate Mandala Art",
+    category: "Mandala",
     description:
       "Intricately handcrafted ornate mandala artwork inspired by traditional Indian patterns.",
     price: 2799,
@@ -95,6 +99,7 @@ export const mandalaArt = [
     id: 5,
     slug: "swastik-mandala",
     title: "Swastik Mandala Art",
+    category: "Mandala",
     description:
       "Sacred handcrafted Swastik Mandala artwork ideal for pooja rooms and spiritual spaces.",
     price: 2799,
