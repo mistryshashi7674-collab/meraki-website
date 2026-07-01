@@ -3,6 +3,7 @@ import Hero from "@/components/mandala/Hero";
 import Gallery from "@/components/mandala/Gallery";
 import AboutMandala from "@/components/mandala/AboutMandala";
 import WhyChoose from "@/components/mandala/WhyChoose";
+import CollectionBreadcrumb from "@/components/breadcrumbs/CollectionBreadcrumb";
 
 export const metadata: Metadata = {
   title:
@@ -84,6 +85,9 @@ export default function MandalaArtPage() {
           __html: JSON.stringify(breadcrumbSchema),
         }}
       />
+      <div className="max-w-7xl mx-auto px-6 pt-8 pb-4">
+        <CollectionBreadcrumb />
+      </div>
       <Hero />
       <Gallery />
       <AboutMandala />
