@@ -99,17 +99,36 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+
     name: "Meraki by Nandita",
+
     image: "https://merakinandita.in/images/hero-art.jpg",
+
     url: "https://merakinandita.in",
-    telephone: "+918007801123",
+
+    telephone: "+91-8007801123",
+
+    description:
+      "Handcrafted Mandala Art, Lippan Art and custom wall décor made in Chennai.",
+
     address: {
       "@type": "PostalAddress",
       addressLocality: "Chennai",
       addressRegion: "Tamil Nadu",
       addressCountry: "IN",
     },
-    sameAs: ["https://www.instagram.com/meraki_nandita_/"],
+
+    areaServed: {
+      "@type": "Country",
+      name: "India",
+    },
+
+    priceRange: "₹₹",
+
+    sameAs: [
+      "https://www.instagram.com/meraki_nandita_/",
+      "https://www.pinterest.com/nanditathakur29",
+    ],
   };
 
   return (
