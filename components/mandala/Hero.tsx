@@ -48,7 +48,7 @@ export default function MandalaArtPage() {
           {/* Right Image */}
           <div>
             <Image
-              src="/images/mandala/swastik-mandala/swastik-poojaroom.jpg"
+              src="/images/mandala/swastik-mandala/swastik-pooja-room.jpg"
               alt="Handmade Mandala wall art by Meraki by Nandita"
               width={650}
               height={650}
