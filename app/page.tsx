@@ -58,7 +58,7 @@ export default function Home() {
 
           <div>
             <Image
-              src="/images/mandala/Black-Balcony.jpg"
+              src="/images/hero-art.jpg"
               alt="Handmade Mandala and Lippan wall art by Meraki by Nandita"
               width={600}
               height={600}
