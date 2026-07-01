@@ -33,7 +33,27 @@ export default async function ProductPage({ params }: Props) {
         <div>
           <h1 className="text-5xl font-bold">{artwork.title}</h1>
 
-          <p className="mt-6">{artwork.description}</p>
+          <p className="mt-6 text-lg leading-8 text-gray-700">
+            {artwork.description}
+          </p>
+
+          <div className="mt-8 space-y-3">
+            <p>
+              <strong>Price:</strong> ₹{artwork.price}
+            </p>
+
+            <p>
+              <strong>Size:</strong> {artwork.size}
+            </p>
+
+            <p>
+              <strong>Medium:</strong> {artwork.medium}
+            </p>
+
+            <p>
+              <strong>Frame:</strong> {artwork.frame}
+            </p>
+          </div>
         </div>
       </div>
     </main>
