@@ -85,7 +85,7 @@ export default async function ProductPage({ params }: Props) {
                 alt={item.title}
                 width={400}
                 height={400}
-                className="rounded-xl hover:scale-105 transition"
+                className="aspect-square w-full rounded-xl object-cover hover:scale-105 transition"
               />
 
               <h3 className="mt-4 font-semibold">{item.title}</h3>

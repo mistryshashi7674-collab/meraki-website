@@ -43,7 +43,7 @@ export default function ProductGallery({
               alt={title}
               width={150}
               height={150}
-              className="w-full h-auto"
+              className="aspect-square w-full object-cover"
             />
           </button>
         ))}
