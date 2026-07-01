@@ -5,7 +5,7 @@ const artworks = [
     title: "Handmade Mandala Wall Art",
     description:
       "Beautiful handcrafted mandala artwork designed to enhance modern living spaces.",
-    image: "/images/hero-art.jpg",
+    image: "/images/ornate-mandala.jpg",
     alt: "Handmade Mandala wall art for living room",
   },
 
@@ -13,7 +13,7 @@ const artworks = [
     title: "Custom Wooden Mandala",
     description:
       "Personalised wooden mandala art made to match your home décor.",
-    image: "/images/hero-art.jpg",
+    image: "/images/black-pink-mandala.jpg",
     alt: "Custom wooden mandala artwork",
   },
 
@@ -21,7 +21,7 @@ const artworks = [
     title: "Colourful Mandala Painting",
     description:
       "Bright and elegant mandala painting suitable for bedrooms and offices.",
-    image: "/images/hero-art.jpg",
+    image: "/images/yellow-mandala.jpg",
     alt: "Colourful handmade mandala painting",
   },
 ];
