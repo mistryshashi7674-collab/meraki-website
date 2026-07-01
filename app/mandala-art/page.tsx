@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     description:
       "Handcrafted Mandala Art, personalized wall decor and custom artwork from Chennai.",
 
-    images: ["/images/hero-art.jpg"],
+    images: ["/images/mandala/swastic-poojaroom.jpg"],
   },
 
   robots: {

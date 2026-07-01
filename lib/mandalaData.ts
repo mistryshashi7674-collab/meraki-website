@@ -14,7 +14,7 @@ export const mandalaArt = [
     title: "Black & Pink Mandala",
     description:
       "Elegant handcrafted mandala with black and pink detailing.",
-    image: "/images/mandala/Blackpink-closeup.jpg",
+    image: "/images/mandala/Blackpink-sofa.jpg",
     alt: "Black and pink mandala artwork",
     size: '10" x 10"',
   },
