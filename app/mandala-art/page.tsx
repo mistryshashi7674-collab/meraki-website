@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "/images/mandala/swastic-poojaroom.jpg",
+        url: "/images/mandala/swastik-mandala/swastik-poojaroom.jpg",
         width: 1200,
         height: 630,
         alt: "Handmade Mandala Art by Meraki by Nandita",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     description:
       "Handcrafted Mandala Art, personalized wall decor and custom artwork from Chennai.",
 
-    images: ["/images/mandala/swastic-poojaroom.jpg"],
+    images: ["/images/mandala/swastik-mandala/swastik-poojaroom.jpg"],
   },
 
   robots: {
