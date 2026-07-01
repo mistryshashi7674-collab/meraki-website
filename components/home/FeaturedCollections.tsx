@@ -5,7 +5,7 @@ const collections = [
     title: "Mandala Art",
     description:
       "Intricate handcrafted mandalas designed to bring peace and elegance.",
-    image: "/images/mandala/Black-hall-room.jpg",
+    image: "/images/mandala/black-mandala/black-hall-room.jpg",
   },
   {
     title: "Lippan Art",
