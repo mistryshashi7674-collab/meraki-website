@@ -4,7 +4,7 @@ export const mandalaArt = [
     title: "Ornate Mandala Art",
     description:
       "Handcrafted mandala artwork perfect for living rooms and modern interiors.",
-    image: "/images/mandala/ornate-mandala.jpg",
+    image: "/images/mandala/ornate-asthetic.jpg",
     alt: "Ornate handmade mandala wall art",
     size: '10" x 10"',
   },
@@ -14,7 +14,7 @@ export const mandalaArt = [
     title: "Black & Pink Mandala",
     description:
       "Elegant handcrafted mandala with black and pink detailing.",
-    image: "/images/mandala/black-pink-mandala.jpg",
+    image: "/images/mandala/Blackpink-closeup.jpg",
     alt: "Black and pink mandala artwork",
     size: '10" x 10"',
   },
@@ -24,7 +24,7 @@ export const mandalaArt = [
     title: "Golden Mandala",
     description:
       "Premium yellow handcrafted mandala artwork.",
-    image: "/images/mandala/yellow-mandala.jpg",
+    image: "/images/mandala/Yellow-Hallway.jpg",
     alt: "Golden handmade mandala art",
     size: '10" x 10"',
   },
