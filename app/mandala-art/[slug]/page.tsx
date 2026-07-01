@@ -17,9 +17,16 @@ export default async function ProductPage({ params }: Props) {
     notFound();
   }
 
+  const whatsappMessage = encodeURIComponent(
+    `Hi Nandita, I'm interested in "${artwork.title}". Can you please share more details?`,
+  );
+
+  const whatsappUrl = `https://wa.me/918007801123?text=${whatsappMessage}`;
+
   return (
     <main className="max-w-7xl mx-auto px-6 py-16">
       <div className="grid lg:grid-cols-2 gap-16">
+        {/* LEFT COLUMN */}
         <div>
           <Image
             src={artwork.images[0]}
@@ -30,6 +37,7 @@ export default async function ProductPage({ params }: Props) {
           />
         </div>
 
+        {/* RIGHT COLUMN */}
         <div>
           <h1 className="text-5xl font-bold">{artwork.title}</h1>
 
@@ -41,15 +49,12 @@ export default async function ProductPage({ params }: Props) {
             <p>
               <strong>Price:</strong> ₹{artwork.price}
             </p>
-
             <p>
               <strong>Size:</strong> {artwork.size}
             </p>
-
             <p>
               <strong>Medium:</strong> {artwork.medium}
             </p>
-
             <p>
               <strong>Frame:</strong> {artwork.frame}
             </p>
