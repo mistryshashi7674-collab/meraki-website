@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { mandalaArt } from "@/lib/mandalaData";
 import { notFound } from "next/navigation";
+import ProductGallery from "@/components/product/ProductGallery";
 
 type Props = {
   params: Promise<{
@@ -28,14 +29,7 @@ export default async function ProductPage({ params }: Props) {
       <div className="grid lg:grid-cols-2 gap-20 items-start">
         {/* LEFT COLUMN */}
         <div>
-          <Image
-            src={artwork.images[0]}
-            alt={artwork.title}
-            width={700}
-            height={700}
-            priority
-            className="rounded-xl w-full object-cover"
-          />
+          <ProductGallery images={artwork.images} title={artwork.title} />
         </div>
 
         {/* RIGHT COLUMN */}
