@@ -38,8 +38,8 @@ export const mandalaArt = [
 
     images: [
       "/images/mandala/black-mandala/black-hall-room.jpg",
-      "/images/mandala/black-mandala/black-living-room.jpg",
       "/images/mandala/black-mandala/black-balcony.jpg",
+      "/images/mandala/black-mandala/black-living-room.jpg",
       "/images/mandala/black-mandala/black-pooja-room.jpg",
       "/images/mandala/black-mandala/black-closeup.jpg",
       "/images/mandala/black-mandala/black-mandala-original.jpg",
