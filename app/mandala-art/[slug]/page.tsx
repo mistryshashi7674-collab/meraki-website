@@ -3,6 +3,7 @@ import { mandalaArt } from "@/lib/mandalaData";
 import { notFound } from "next/navigation";
 import ProductGallery from "@/components/product/ProductGallery";
 import Link from "next/link";
+import ProductBreadcrumb from "@/components/product/ProductBreadcrumb";
 
 type Props = {
   params: Promise<{
@@ -34,6 +35,7 @@ export default async function ProductPage({ params }: Props) {
 
   return (
     <main className="max-w-7xl mx-auto px-6 py-16">
+      <ProductBreadcrumb title={artwork.title} />
       <div className="grid lg:grid-cols-5 gap-20 items-start">
         {/* LEFT COLUMN */}
         <div className="lg:col-span-3">
@@ -75,7 +77,9 @@ export default async function ProductPage({ params }: Props) {
       </div>
 
       <section className="mt-24">
-        <h2 className="text-3xl font-bold mb-8">Explore more Mandala Artwork</h2>
+        <h2 className="text-3xl font-bold mb-8">
+          Explore more Mandala Artwork
+        </h2>
 
         <div className="grid md:grid-cols-3 gap-8">
           {relatedProducts.map((item) => (
