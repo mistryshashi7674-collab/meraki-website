@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const collections = [
   {
@@ -6,16 +7,19 @@ const collections = [
     description:
       "Intricate handcrafted mandalas designed to bring peace and elegance.",
     image: "/images/mandala/black-mandala/black-hall-room.jpg",
+    href: "/mandala-art",
   },
   {
     title: "Lippan Art",
     description: "Traditional mirror artwork with a contemporary touch.",
     image: "/images/hero-art.jpg",
+    href: "/lippan-art",
   },
   {
     title: "Acrylic Paintings",
     description: "Unique handmade paintings for every interior style.",
     image: "/images/hero-art.jpg",
+    href: "/acrylic-paintings",
   },
 ];
 
@@ -34,9 +38,10 @@ export default function FeaturedCollections() {
 
         <div className="grid md:grid-cols-3 gap-10 mt-20">
           {collections.map((item) => (
-            <div
+            <Link
               key={item.title}
-              className="group rounded-3xl overflow-hidden bg-white shadow-lg hover:shadow-2xl transition duration-500"
+              href={item.href}
+              className="group rounded-3xl overflow-hidden bg-white shadow-lg hover:shadow-2xl transition duration-500 block"
             >
               <div className="overflow-hidden">
                 <Image
@@ -55,11 +60,11 @@ export default function FeaturedCollections() {
 
                 <p className="mt-4 text-gray-600">{item.description}</p>
 
-                <button className="mt-6 text-pink-600 font-semibold hover:translate-x-1 transition">
-                  Explore →
-                </button>
+                <div className="mt-6 inline-flex items-center text-pink-600 font-semibold group-hover:translate-x-1 transition">
+                  Explore Collection →
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
