@@ -48,7 +48,7 @@ export default function MandalaArtPage() {
           {/* Right Image */}
           <div>
             <Image
-              src="/images/hero-art.jpg"
+              src="/images/black-white-mandala.jpg"
               alt="Handmade Mandala wall art by Meraki by Nandita"
               width={650}
               height={650}
