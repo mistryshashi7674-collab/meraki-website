@@ -25,7 +25,7 @@ export default async function ProductPage({ params }: Props) {
 
   return (
     <main className="max-w-7xl mx-auto px-6 py-16">
-      <div className="grid lg:grid-cols-2 gap-16">
+      <div className="grid lg:grid-cols-2 gap-20 items-start">
         {/* LEFT COLUMN */}
         <div>
           <Image
@@ -33,7 +33,8 @@ export default async function ProductPage({ params }: Props) {
             alt={artwork.title}
             width={700}
             height={700}
-            className="rounded-xl w-full"
+            priority
+            className="rounded-xl w-full object-cover"
           />
         </div>
 
@@ -46,8 +47,8 @@ export default async function ProductPage({ params }: Props) {
           </p>
 
           <div className="mt-8 space-y-3">
-            <p>
-              <strong>Price:</strong> ₹{artwork.price}
+            <p className="text-3xl font-bold text-yellow-500 mt-8">
+              ₹{artwork.price}
             </p>
             <p>
               <strong>Size:</strong> {artwork.size}
@@ -58,6 +59,15 @@ export default async function ProductPage({ params }: Props) {
             <p>
               <strong>Frame:</strong> {artwork.frame}
             </p>
+
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center mt-8 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition"
+            >
+              Enquire on WhatsApp
+            </a>
           </div>
         </div>
       </div>
