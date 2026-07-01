@@ -23,7 +23,7 @@ export default function ProductGallery({
         width={700}
         height={700}
         priority
-        className="rounded-xl w-full object-cover"
+        className="aspect-square w-full rounded-xl w-full object-cover"
       />
 
       {/* Thumbnails */}
