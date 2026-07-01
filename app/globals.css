@@ -3,6 +3,12 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Meraki Brand Colors */
+  --hero-bg: #FAF7F2;
+  --brand-pink: #EC4899;
+  --brand-green: #25D366;
+  --text-dark: #1F2937;
 }
 
 @theme inline {

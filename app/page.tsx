@@ -5,7 +5,6 @@ import Navbar from "@/components/layout/Navbar";
 import FeaturedCollections from "@/components/home/FeaturedCollections";
 import WhyChooseMeraki from "@/components/home/WhyChooseMeraki";
 
-
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#FFF9F5]">
@@ -13,59 +12,61 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="max-w-7xl mx-auto px-6 py-20">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h1 className="text-5xl md:text-6xl font-bold leading-tight text-gray-900">
-              Handmade Mandala, Lippan & Acrylic Painting
-              <br />
-              For Beautiful Homes
-            </h1>
+      <section className="bg-[var(--hero-bg)]">
+        <div className="max-w-7xl mx-auto px-6 py-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            {/* Left Content */}
+            <div>
+              <h1 className="text-5xl md:text-6xl font-bold leading-tight text-gray-900">
+                Handmade Mandala, Lippan & Acrylic Painting
+                <br />
+                For Beautiful Homes
+              </h1>
 
-            <p className="mt-8 text-xl text-gray-600 leading-9 max-w-xl">
-              Discover handcrafted Mandala Art, Lippan Art and Canvas Paintings
-              designed to bring warmth, elegance and personality to your home.
-              Based in Chennai, Meraki by Nandita creates custom wall décor,
-              personalized artwork and handmade gifts that are crafted with care
-              and delivered across India.
-            </p>
+              <p className="mt-8 text-xl text-gray-600 leading-9 max-w-xl">
+                Discover handcrafted Mandala Art, Lippan Art and Canvas
+                Paintings designed to bring warmth, elegance and personality to
+                your home. Based in Chennai, Meraki by Nandita creates custom
+                wall décor, personalized artwork and handmade gifts that are
+                crafted with care and delivered across India.
+              </p>
 
-            <div className="mt-10 flex flex-wrap gap-4">
-              <a
-                href="/shop"
-                className="bg-pink-500 hover:bg-pink-600 hover:scale-105 transition duration-300 text-white px-6 py-3 rounded-lg"
-              >
-                Explore Collection
-              </a>
+              <div className="mt-10 flex flex-wrap gap-4">
+                <a
+                  href="/shop"
+                  className="bg-pink-500 hover:bg-pink-600 hover:scale-105 transition duration-300 text-white px-6 py-3 rounded-lg"
+                >
+                  Explore Collection
+                </a>
 
-              <a
-                href="https://wa.me/918007801123"
-                target="_blank"
-                className="border border-green-600 hover:bg-green-50 hover:scale-105 transition duration-300 text-gray-600 px-6 py-3 rounded-lg"
-              >
-                Request Custom Artwork
-              </a>
+                <a
+                  href="https://wa.me/918007801123"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-green-600 hover:bg-green-50 hover:scale-105 transition duration-300 text-gray-600 px-6 py-3 rounded-lg"
+                >
+                  Request Custom Artwork
+                </a>
+              </div>
+
+              <div className="mt-8 flex flex-wrap gap-5 text-sm font-medium text-gray-600">
+                <div>✔ Handmade by Nandita</div>
+                <div>✔ Pan India Shipping</div>
+                <div>✔ Custom Orders Welcome</div>
+              </div>
             </div>
 
-            <div className="mt-8 flex flex-wrap gap-5 text-sm font-medium text-gray-600">
-              <div>✔ Handmade by Nandita</div>
-
-              <div>✔ Pan India Shipping</div>
-
-              <div>✔ Custom Orders Welcome</div>
+            {/* Right Image */}
+            <div className="flex justify-center md:justify-end">
+              <Image
+                src="/images/hero-art.jpg"
+                alt="Handmade Mandala and Lippan wall art by Meraki by Nandita"
+                width={600}
+                height={600}
+                className="rounded-3xl shadow-2xl hover:scale-[1.02] transition-all duration-500"
+              />
             </div>
           </div>
-
-          <div>
-            <Image
-              src="/images/hero-art.jpg"
-              alt="Handmade Mandala and Lippan wall art by Meraki by Nandita"
-              width={600}
-              height={600}
-              className="rounded-3xl shadow-2xl hover:scale-[1.02] transition-all duration-500"
-            />
-          </div>
-          <div className="-mt-6"></div>
         </div>
       </section>
 
