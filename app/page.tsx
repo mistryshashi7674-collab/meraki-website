@@ -1,6 +1,6 @@
 import AnnouncementBar from "@/components/layout/announcement-bar";
 import Image from "next/image";
-import { FaWhatsapp, FaInstagram } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram, FaPinterest } from "react-icons/fa";
 import Navbar from "@/components/layout/Navbar";
 import FeaturedCollections from "@/components/home/FeaturedCollections";
 import WhyChooseMeraki from "@/components/home/WhyChooseMeraki";
@@ -228,7 +228,7 @@ export default function Home() {
             Instagram.
           </p>
 
-          <div className="flex justify-center">
+          <div className="flex flex-col sm:flex-row justify-center gap-5">
             <a
               href="https://www.instagram.com/meraki_nandita_/"
               target="_blank"
@@ -236,7 +236,17 @@ export default function Home() {
               className="inline-flex items-center gap-3 bg-pink-500 text-white px-8 py-4 rounded-xl font-semibold hover:bg-pink-600"
             >
               <FaInstagram size={24} />
-              Follow @meraki_nandita_
+              <span>Follow @meraki_nandita_</span>
+            </a>
+
+            <a
+              href="https://www.pinterest.com/nanditathakur29/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-3 rounded-xl border-2 border-red-600 bg-white px-8 py-4 text-red-600 font-semibold transition-all duration-300 hover:bg-red-600 hover:text-white hover:shadow-lg"
+            >
+              <FaPinterest size={24} />
+              <span>Follow @nanditathakur92</span>
             </a>
           </div>
         </div>
