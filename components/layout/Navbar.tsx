@@ -50,8 +50,8 @@ export default function Navbar() {
         showNavbar ? "translate-y-0" : "-translate-y-full"
       } ${
         scrolled
-          ? "bg-[var(--hero-bg)] backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.06)] border-b border-stone-200"
-          : "bg-[var(--hero-bg)] border-b border-transparent"
+          ? "bg-white backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.06)] border-b border-stone-200"
+          : "bg-white border-b border-transparent"
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-10 py-5 lg:px-12 transition-all duration-300">
