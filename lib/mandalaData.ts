@@ -1,3 +1,17 @@
+export type MandalaProduct = {
+  id: number;
+  slug: string;
+  title: string;
+  category: string;
+  description: string;
+  price: number;
+  size: string;
+  frame: string;
+  medium: string;
+  available: boolean;
+  images: string[];
+};
+
 export const mandalaArt = [
   {
     id: 1,

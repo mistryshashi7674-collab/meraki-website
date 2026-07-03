@@ -1,63 +1,80 @@
-import Image from "next/image";
 import Link from "next/link";
 
-export default function MandalaArtPage() {
+export default function Hero() {
   return (
-    <main className="min-h-screen bg-[#FFF9F5]">
-      {/* Hero Section */}
-      <section className="max-w-7xl mx-auto px-6 py-20">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-          <div>
-            <h1 className="text-5xl md:text-6xl font-bold leading-tight text-gray-900">
-              Handmade Mandala Art in Chennai
-            </h1>
+    <section
+      className="relative min-h-[75vh] flex items-center"
+      style={{
+        backgroundImage:
+          "linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.45)), url('/images/mandala/swastik-mandala/swastik-pooja-room.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="max-w-7xl mx-auto px-6 w-full">
+        <div className="max-w-3xl">
 
-            <p className="mt-8 text-xl text-gray-600 leading-9">
-              Discover handcrafted Mandala wall art designed to bring warmth,
-              elegance and positive energy to your home. Every artwork is
-              carefully created by Nandita and can be customised to match your
-              style, colours and space.
-            </p>
+          {/* Breadcrumb */}
 
-            <div className="mt-10 flex flex-wrap gap-4">
-              <a
-                href="https://wa.me/918007801123"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg transition"
-              >
-                Order on WhatsApp
-              </a>
+          <p className="text-white/80 text-sm">
+            Home / Mandala Art
+          </p>
 
-              <Link
-                href="/"
-                className="border border-pink-500 text-pink-600 hover:bg-pink-50 px-6 py-3 rounded-lg transition"
-              >
-                View More Collections
-              </Link>
-            </div>
+          {/* Heading */}
 
-            <div className="mt-10 flex flex-wrap gap-6 text-gray-700 font-medium">
-              <span>✔ Handmade in Chennai</span>
-              <span>✔ Custom Designs</span>
-              <span>✔ Pan India Shipping</span>
-            </div>
+          <h1 className="text-5xl md:text-7xl font-bold leading-tight text-white">
+            Handcrafted
+            <br />
+            Mandala Art
+          </h1>
+
+          {/* Description */}
+
+          <p className="mt-8 text-xl leading-9 text-white/90 max-w-2xl">
+            Transform your home with handcrafted Mandala wall art designed to
+            bring harmony, elegance and timeless beauty into every space. Every
+            artwork is lovingly created by Nandita and can be customised to
+            perfectly suit your interiors.
+          </p>
+
+          {/* Buttons */}
+
+          <div className="mt-10 flex flex-wrap gap-5">
+
+            <a
+              href="https://wa.me/918007801123"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-pink-600 px-8 py-4 text-white font-semibold transition hover:bg-pink-700"
+            >
+              Custom Order
+            </a>
+
+            <Link
+              href="#gallery"
+              className="rounded-full border border-white px-8 py-4 text-white font-semibold transition hover:bg-white hover:text-gray-900"
+            >
+              Explore Collection
+            </Link>
+
           </div>
 
-          {/* Right Image */}
-          <div>
-            <Image
-              src="/images/mandala/swastik-mandala/swastik-pooja-room.jpg"
-              alt="Handmade Mandala wall art by Meraki by Nandita"
-              width={650}
-              height={650}
-              className="rounded-3xl shadow-2xl"
-              priority
-            />
+          {/* Trust Badges */}
+
+          <div className="mt-12 flex flex-wrap gap-8 text-white text-sm font-medium">
+
+            <span>✨ 100% Handmade</span>
+
+            <span>🎨 Custom Sizes</span>
+
+            <span>🇮🇳 Made in India</span>
+
+            <span>🚚 Pan India Shipping</span>
+
           </div>
+
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
   );
 }
