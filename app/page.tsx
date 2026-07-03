@@ -267,7 +267,7 @@ export default function Home() {
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:shadow-xl z-50"
       >
-        <FaWhatsapp size={36} />
+        <FaWhatsapp size={32} />
       </a>
 
       <footer className="bg-[#1E2433] text-white mt-24">
