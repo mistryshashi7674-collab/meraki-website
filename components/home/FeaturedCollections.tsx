@@ -25,7 +25,7 @@ const collections = [
 
 export default function FeaturedCollections() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-[var(--surface)]">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-4xl font-bold text-center text-gray-900">
           Explore Our Collections
@@ -41,7 +41,7 @@ export default function FeaturedCollections() {
             <Link
               key={item.title}
               href={item.href}
-              className="group rounded-3xl overflow-hidden bg-white shadow-lg hover:shadow-2xl transition duration-500 block"
+              className="group rounded-3xl overflow-hidden bg-[var(--surface)] shadow-lg hover:shadow-2xl transition duration-500 block"
             >
               <div className="overflow-hidden">
                 <Image

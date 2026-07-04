@@ -44,14 +44,14 @@ export default function Hero() {
               href="https://wa.me/918007801123"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-pink-600 px-8 py-4 text-white font-semibold transition hover:bg-pink-700"
+              className="rounded-full bg-[var(--accent)] px-8 py-4 text-white font-semibold transition hover:bg-[var(--accent-hover)]"
             >
               Custom Order
             </a>
 
             <Link
               href="#gallery"
-              className="rounded-full border border-white px-8 py-4 text-white font-semibold transition hover:bg-white hover:text-gray-900"
+              className="rounded-full border border-white px-8 py-4 text-white font-semibold transition hover:bg-[var(--surface)] hover:text-gray-900"
             >
               Explore Collection
             </Link>

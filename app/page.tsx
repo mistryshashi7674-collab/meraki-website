@@ -34,7 +34,7 @@ export default function Home() {
               <div className="mt-10 flex flex-wrap gap-4">
                 <a
                   href="/shop"
-                  className="bg-pink-500 hover:bg-pink-600 hover:scale-105 transition duration-300 text-white px-6 py-3 rounded-lg"
+                  className="bg-pink-500 hover:bg-[var(--accent)] hover:scale-105 transition duration-300 text-white px-6 py-3 rounded-lg"
                 >
                   Explore Collection
                 </a>
@@ -74,7 +74,7 @@ export default function Home() {
       <WhyChooseMeraki />
 
       {/* Meet the Artist */}
-      <section className="bg-white py-20">
+      <section className="bg-[var(--surface)] py-20">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div>
             <Image
@@ -155,7 +155,7 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="bg-white py-20">
+      <section className="bg-[var(--surface)] py-20">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">
             Frequently Asked Questions
@@ -233,7 +233,7 @@ export default function Home() {
               href="https://www.instagram.com/meraki_nandita_/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-pink-500 text-white px-8 py-4 rounded-xl font-semibold hover:bg-pink-600"
+              className="inline-flex items-center gap-3 bg-pink-500 text-white px-8 py-4 rounded-xl font-semibold hover:bg-[var(--accent)]"
             >
               <FaInstagram size={24} />
               <span>Follow @meraki_nandita_</span>
@@ -243,7 +243,7 @@ export default function Home() {
               href="https://www.pinterest.com/nanditathakur29/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-3 rounded-xl border-2 border-red-600 bg-white px-8 py-4 text-red-600 font-semibold transition-all duration-300 hover:bg-red-600 hover:text-white hover:shadow-lg"
+              className="flex items-center justify-center gap-3 rounded-xl border-2 border-red-600 bg-[var(--surface)] px-8 py-4 text-red-600 font-semibold transition-all duration-300 hover:bg-red-600 hover:text-white hover:shadow-lg"
             >
               <FaPinterest size={24} />
               <span>Follow @nanditathakur92</span>
@@ -341,7 +341,7 @@ export default function Home() {
                 <a
                   href="https://instagram.com/meraki_nandita_"
                   target="_blank"
-                  className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center transition duration-300 hover:scale-110 hover:bg-pink-500 transition"
+                  className="w-12 h-12 rounded-full bg-[var(--surface)]/10 flex items-center justify-center transition duration-300 hover:scale-110 hover:bg-pink-500 transition"
                 >
                   <FaInstagram size={22} />
                 </a>
@@ -349,7 +349,7 @@ export default function Home() {
                 <a
                   href="https://wa.me/918007801123"
                   target="_blank"
-                  className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center transition duration-300 hover:scale-110 hover:bg-green-500 transition"
+                  className="w-12 h-12 rounded-full bg-[var(--surface)]/10 flex items-center justify-center transition duration-300 hover:scale-110 hover:bg-green-500 transition"
                 >
                   <FaWhatsapp size={22} />
                 </a>

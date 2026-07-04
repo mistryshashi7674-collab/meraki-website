@@ -32,8 +32,8 @@ export default function ProductGallery({ images, title }: Props) {
         />
 
         {/* Hover Overlay */}
-        <div className="pointer-events-none absolute inset-0 flex items-end justify-center bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-          <span className="mb-6 rounded-full bg-white/90 px-5 py-2 text-sm font-medium text-stone-800 backdrop-blur shadow-lg">
+        <div className="pointer-events-none absolute inset-0 flex items-end justify-center bg-gradient-to-t from-black/60 via-black/10 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+          <span className="mb-6 rounded-full bg-[var(--surface)]/90 px-5 py-2 text-sm font-medium text-stone-800 backdrop-blur shadow-lg">
             Click to enlarge
           </span>
         </div>
@@ -48,7 +48,7 @@ export default function ProductGallery({ images, title }: Props) {
             className={`cursor-pointer overflow-hidden rounded-2xl border-2 transition-all duration-300 ${
               selectedImage === image
                 ? "border-pink-500 scale-105 shadow-lg"
-                : "border-stone-200 hover:border-pink-300 hover:scale-105"
+                : "border-[var(--border)] hover:border-pink-300 hover:scale-105"
             }`}
           >
             <Image

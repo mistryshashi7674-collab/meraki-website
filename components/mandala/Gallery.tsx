@@ -3,7 +3,7 @@ import ProductCard from "@/components/product/ProductCard";
 
 export default function Gallery() {
   return (
-    <section id="gallery" className="bg-white py-24">
+    <section id="gallery" className="bg-[var(--surface)] py-24">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-4xl font-bold text-center text-gray-900">
           Featured Mandala Collection

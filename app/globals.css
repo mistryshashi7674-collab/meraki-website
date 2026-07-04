@@ -1,14 +1,26 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Backgrounds */
+  --background: #faf7f2;
+  --surface: #ffffff;
+  --surface-alt: #f8f5f0;
 
-  /* Meraki Brand Colors */
-  --hero-bg: #FAF7F2;
-  --brand-pink: #EC4899;
-  --brand-green: #25D366;
-  --text-dark: #1F2937;
+  /* Brand */
+  --accent: #ec4899;
+  --accent-hover: #db2777;
+  --success: #25d366;
+
+  /* Text */
+  --text-primary: #1f2937;
+  --text-secondary: #57534e;
+  --text-light: #78716c;
+
+  /* Borders */
+  --border: #e7e5e4;
+
+  /* Shadows */
+  --shadow-soft: 0 8px 30px rgba(0, 0, 0, 0.06);
 }
 
 @theme inline {
@@ -18,15 +30,9 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
-  color: var(--foreground);
+  color: var(--text-primary);
   font-family: Arial, Helvetica, sans-serif;
 }
+
