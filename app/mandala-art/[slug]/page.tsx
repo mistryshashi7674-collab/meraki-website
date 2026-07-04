@@ -210,6 +210,89 @@ export default async function ProductPage({ params }: Props) {
           </div>
         </div>
       </div>
+      <section className="mt-24 border-t border-stone-200 pt-20">
+        <div className="max-w-4xl">
+          <h2 className="text-4xl font-bold text-stone-900">
+            About this Artwork
+          </h2>
+
+          <p className="mt-8 text-lg leading-9 text-stone-600">
+            Every Mandala artwork by Meraki by Nandita is thoughtfully
+            handcrafted using premium acrylic colours on high-quality MDF.
+            Inspired by the timeless beauty of traditional Indian Mandalas, each
+            piece is designed to bring harmony, elegance and positive energy
+            into your home.
+          </p>
+
+          <p className="mt-6 text-lg leading-9 text-stone-600">
+            As every artwork is handmade, each creation carries its own unique
+            character and intricate detailing, making it a truly one-of-a-kind
+            addition to your living room, bedroom, pooja room or workspace.
+          </p>
+
+          <p className="mt-6 text-lg leading-9 text-stone-600">
+            Looking for something personalised? We also create custom Mandala
+            artworks in your preferred colours, sizes and themes to perfectly
+            complement your interiors.
+          </p>
+        </div>
+      </section>
+      <div className="mt-14 grid gap-6 sm:grid-cols-2">
+        <div className="rounded-2xl border border-stone-200 p-6">
+          <h3 className="font-semibold text-lg">Premium Materials</h3>
+
+          <p className="mt-3 text-stone-600">
+            Crafted using premium MDF, acrylic colours and a durable protective
+            finish.
+          </p>
+        </div>
+
+        <div className="rounded-2xl border border-stone-200 p-6">
+          <h3 className="font-semibold text-lg">Ready to Hang</h3>
+
+          <p className="mt-3 text-stone-600">
+            Delivered with a premium frame, ready to enhance your space.
+          </p>
+        </div>
+
+        <div className="rounded-2xl border border-stone-200 p-6">
+          <h3 className="font-semibold text-lg">Handmade with Care</h3>
+
+          <p className="mt-3 text-stone-600">
+            Every dot and detail is individually painted by hand with patience
+            and precision.
+          </p>
+        </div>
+
+        <div className="rounded-2xl border border-stone-200 p-6">
+          <h3 className="font-semibold text-lg">Custom Orders</h3>
+
+          <p className="mt-3 text-stone-600">
+            Personalise colours, sizes and designs to create a piece that's
+            uniquely yours.
+          </p>
+        </div>
+      </div>
+
+      <div className="mt-16 rounded-[32px] bg-[var(--hero-bg)] p-10 text-center">
+        <h3 className="text-3xl font-bold text-stone-900">
+          Looking for a Custom Mandala?
+        </h3>
+
+        <p className="mt-4 text-stone-600 max-w-2xl mx-auto">
+          Share your preferred colours, size and design ideas, and we'll create
+          a handcrafted artwork made exclusively for your space.
+        </p>
+
+        <a
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-8 inline-flex items-center rounded-full bg-[#25D366] px-8 py-4 text-white font-semibold transition hover:bg-[#1EBE5D]"
+        >
+          Discuss Your Custom Artwork
+        </a>
+      </div>
 
       <section className="mt-32">
         <div className="text-center mb-12">
