@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { mandalaArt } from "@/lib/mandalaData";
 import { notFound } from "next/navigation";
 import ProductGallery from "@/components/product/ProductGallery";
-import Link from "next/link";
 import ProductBreadcrumb from "@/components/product/ProductBreadcrumb";
 import ProductSchema from "@/components/seo/ProductSchema";
-
+import ProductCard from "@/components/product/ProductCard";
 
 export async function generateMetadata({
   params,
@@ -120,57 +118,114 @@ export default async function ProductPage({ params }: Props) {
         </div>
 
         {/* RIGHT COLUMN */}
-        <div className="lg:col-span-2 sticky top-28">
+        <div className="lg:col-span-2 lg:sticky lg:top-28">
           <h1 className="text-5xl font-bold">{artwork.title}</h1>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <span className="rounded-full bg-pink-100 px-4 py-2 text-sm font-semibold text-pink-700">
+              ✨ Handmade
+            </span>
+
+            <span className="rounded-full bg-yellow-100 px-4 py-2 text-sm font-semibold text-yellow-700">
+              🎨 Customisable
+            </span>
+
+            <span className="rounded-full bg-green-100 px-4 py-2 text-sm font-semibold text-green-700">
+              ✓ In Stock
+            </span>
+          </div>
 
           <p className="mt-6 text-lg leading-8 text-gray-700">
             {artwork.description}
           </p>
 
           <div className="mt-8 space-y-3">
-            <p className="text-3xl font-bold text-yellow-500 mt-8">
-              ₹{artwork.price}
-            </p>
-            <p>
-              <strong>Size:</strong> {artwork.size}
-            </p>
-            <p>
-              <strong>Medium:</strong> {artwork.medium}
-            </p>
-            <p>
-              <strong>Frame:</strong> {artwork.frame}
-            </p>
+            <div className="mt-10">
+              <p className="text-sm uppercase tracking-widest text-stone-500">
+                Price
+              </p>
 
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center mt-8 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition"
-            >
-              Enquire on WhatsApp
-            </a>
+              <p className="mt-2 text-5xl font-bold text-pink-600">
+                ₹{artwork.price.toLocaleString("en-IN")}
+              </p>
+            </div>
+            <div className="mt-8 space-y-4">
+              <div className="flex justify-between rounded-xl bg-stone-50 p-4">
+                <span className="font-medium text-stone-600">Size</span>
+
+                <span className="font-semibold">{artwork.size}</span>
+              </div>
+
+              <div className="flex justify-between rounded-xl bg-stone-50 p-4">
+                <span className="font-medium text-stone-600">Medium</span>
+
+                <span className="font-semibold">{artwork.medium}</span>
+              </div>
+
+              <div className="flex justify-between rounded-xl bg-stone-50 p-4">
+                <span className="font-medium text-stone-600">Frame</span>
+
+                <span className="font-semibold">{artwork.frame}</span>
+              </div>
+            </div>
+
+            <div className="mt-10 space-y-4">
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex w-full items-center justify-center rounded-full bg-[#25D366] px-6 py-4 font-semibold text-white transition hover:scale-[1.02] hover:bg-[#1EBE5D]"
+              >
+                💬 Order on WhatsApp
+              </a>
+
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex w-full items-center justify-center rounded-full border-2 border-pink-600 bg-white px-6 py-4 font-semibold text-pink-600 transition hover:bg-pink-600 hover:text-white"
+              >
+                🎨 Request Custom Design
+              </a>
+            </div>
+
+            <div className="mt-10 border-t border-stone-200 pt-8">
+              <div className="space-y-4 text-stone-700">
+                <div className="flex items-center gap-3">
+                  ✨ <span>100% Handmade Artwork</span>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  🚚 <span>Pan India Shipping</span>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  🎁 <span>Secure Packaging</span>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  🎨 <span>Custom Colours Available</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <section className="mt-24">
-        <h2 className="text-3xl font-bold mb-8">
-          Explore more Mandala Artwork
-        </h2>
+      <section className="mt-32">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-stone-900">
+            You May Also Like
+          </h2>
 
-        <div className="grid md:grid-cols-3 gap-8">
+          <p className="mt-4 text-stone-600 max-w-2xl mx-auto">
+            Discover more handcrafted Mandala artworks thoughtfully designed to
+            complement your home and personal style.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {relatedProducts.map((item) => (
-            <Link key={item.slug} href={`/mandala-art/${item.slug}`}>
-              <Image
-                src={item.images[0]}
-                alt={item.title}
-                width={400}
-                height={400}
-                className="aspect-square w-full rounded-xl object-cover hover:scale-105 transition"
-              />
-
-              <h3 className="mt-4 font-semibold">{item.title}</h3>
-            </Link>
+            <ProductCard key={item.id} product={item} />
           ))}
         </div>
       </section>
