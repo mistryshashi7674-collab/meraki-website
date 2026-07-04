@@ -17,10 +17,18 @@ export default function Home() {
           <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-12">
             {/* Left Content */}
             <div>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight text-[var(--text-primary)]">
-                Handmade Mandala, Lippan & Acrylic Painting
-                <br />
-                For Beautiful Homes
+              <h1 className="font-bold leading-tight tracking-tight text-[var(--text-primary)]">
+                <span className="block md:hidden text-4xl">
+                  Handmade Mandala Art
+                  <br />
+                  For Beautiful Homes
+                </span>
+
+                <span className="hidden md:block text-6xl">
+                  Handmade Mandala, Lippan & Acrylic Painting
+                  <br />
+                  For Beautiful Homes
+                </span>
               </h1>
 
               <p className="mt-6 max-w-xl text-base leading-8 text-[var(--text-secondary)] md:mt-8 md:text-xl md:leading-9">
@@ -271,7 +279,7 @@ export default function Home() {
       </a>
 
       <footer className="bg-[#1E2433] text-white mt-24">
-        <div className="max-w-7xl mx-auto px-6 py-20">
+        <div className="max-w-7xl mx-auto px-6 py-12 md:py-20">
           <div className="grid md:grid-cols-4 gap-12">
             {/* Brand */}
             <div>
