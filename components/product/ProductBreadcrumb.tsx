@@ -6,7 +6,7 @@ type Props = {
 
 export default function ProductBreadcrumb({ title }: Props) {
   return (
-    <nav className="mb-10 text-sm text-gray-500">
+    <nav className="mb-10 text-sm text-white-500">
       <ol className="flex items-center gap-2 flex-wrap">
         <li>
           <Link href="/" className="hover:text-yellow-500 transition">

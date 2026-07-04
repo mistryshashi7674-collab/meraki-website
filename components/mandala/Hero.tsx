@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CollectionBreadcrumb from "@/components/breadcrumbs/CollectionBreadcrumb";
 
 export default function Hero() {
   return (
@@ -13,12 +14,11 @@ export default function Hero() {
     >
       <div className="max-w-7xl mx-auto px-6 w-full">
         <div className="max-w-3xl">
-
           {/* Breadcrumb */}
 
-          <p className="text-white/80 text-sm">
-            Home / Mandala Art
-          </p>
+          <div className="max-w-7xl mx-auto px-6 pt-8 pb-4">
+            <CollectionBreadcrumb />
+          </div>
 
           {/* Heading */}
 
@@ -40,7 +40,6 @@ export default function Hero() {
           {/* Buttons */}
 
           <div className="mt-10 flex flex-wrap gap-5">
-
             <a
               href="https://wa.me/918007801123"
               target="_blank"
@@ -56,13 +55,11 @@ export default function Hero() {
             >
               Explore Collection
             </Link>
-
           </div>
 
           {/* Trust Badges */}
 
           <div className="mt-12 flex flex-wrap gap-8 text-white text-sm font-medium">
-
             <span>✨ 100% Handmade</span>
 
             <span>🎨 Custom Sizes</span>
@@ -70,9 +67,7 @@ export default function Hero() {
             <span>🇮🇳 Made in India</span>
 
             <span>🚚 Pan India Shipping</span>
-
           </div>
-
         </div>
       </div>
     </section>

@@ -6,7 +6,7 @@ export default function ProductCard({ product }: { product: MandalaProduct }) {
   return (
     <Link
       href={`/mandala-art/${product.slug}`}
-      className="group block overflow-hidden rounded-[30px] border border-stone-200 bg-white transition-all duration-500 hover:-translate-y-3 hover:border-pink-200 hover:shadow-2xl"
+      className="group block overflow-hidden rounded-[32px] border border-stone-200 bg-white transition-all duration-500 hover:-translate-y-3 hover:border-pink-200 hover:shadow-2xl"
     >
       {/* Image */}
 
@@ -16,17 +16,19 @@ export default function ProductCard({ product }: { product: MandalaProduct }) {
           alt={product.title}
           width={700}
           height={700}
-          className="h-[420px] w-full object-cover transition duration-700 group-hover:scale-105"
+          className="h-[420px] w-full object-cover transition duration-700 transition-transform duration-700 ease-out group-hover:scale-105"
         />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/15 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
 
         {/* Badges */}
 
         <div className="absolute left-5 top-5 flex gap-2">
-          <span className="rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-stone-700 shadow">
-            Handmade
+          <span className="rounded-full bg-grey/90 px-3 py-1 text-xs font-semibold backdrop-blur">
+            ✨ Handmade
           </span>
 
-          <span className="rounded-full bg-pink-600 px-3 py-1 text-xs font-semibold text-white shadow">
+          <span className="rounded-full bg-pink-600 px-3 py-1 text-xs font-semibold text-white">
             Custom
           </span>
         </div>
@@ -49,7 +51,7 @@ export default function ProductCard({ product }: { product: MandalaProduct }) {
           </div>
 
           <span className="rounded-full bg-green-100 px-3 py-1 text-xs font-semibold text-green-700">
-            Available
+            In Stock
           </span>
         </div>
 

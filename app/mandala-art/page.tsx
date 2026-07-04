@@ -85,9 +85,6 @@ export default function MandalaArtPage() {
           __html: JSON.stringify(breadcrumbSchema),
         }}
       />
-      <div className="max-w-7xl mx-auto px-6 pt-8 pb-4">
-        <CollectionBreadcrumb />
-      </div>
       <Hero />
       <Gallery />
       <AboutMandala />
