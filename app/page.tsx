@@ -13,17 +13,17 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="bg-[var(--hero-bg)]">
-        <div className="max-w-7xl mx-auto px-6 py-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-7xl mx-auto px-6 py-12 md:py-20">
+          <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-12">
             {/* Left Content */}
             <div>
-              <h1 className="text-5xl md:text-6xl font-bold leading-tight text-gray-900">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight text-[var(--text-primary)]">
                 Handmade Mandala, Lippan & Acrylic Painting
                 <br />
                 For Beautiful Homes
               </h1>
 
-              <p className="mt-8 text-xl text-gray-600 leading-9 max-w-xl">
+              <p className="mt-6 max-w-xl text-base leading-8 text-[var(--text-secondary)] md:mt-8 md:text-xl md:leading-9">
                 Discover handcrafted Mandala Art, Lippan Art and Canvas
                 Paintings designed to bring warmth, elegance and personality to
                 your home. Based in Chennai, Meraki by Nandita creates custom
@@ -31,10 +31,10 @@ export default function Home() {
                 crafted with care and delivered across India.
               </p>
 
-              <div className="mt-10 flex flex-wrap gap-4">
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <a
                   href="/shop"
-                  className="bg-pink-500 hover:bg-[var(--accent)] hover:scale-105 transition duration-300 text-white px-6 py-3 rounded-lg"
+                  className="w-full sm:w-auto rounded-full bg-[var(--accent)] px-8 py-4 text-center font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-[var(--accent-hover)]"
                 >
                   Explore Collection
                 </a>
@@ -43,13 +43,13 @@ export default function Home() {
                   href="https://wa.me/918007801123"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="border border-green-600 hover:bg-green-50 hover:scale-105 transition duration-300 text-gray-600 px-6 py-3 rounded-lg"
+                  className="w-full sm:w-auto rounded-full border-2 border-[var(--success)] px-8 py-4 text-center font-semibold text-[var(--success)] transition-all duration-300 hover:bg-[var(--success)] hover:text-white"
                 >
                   Request Custom Artwork
                 </a>
               </div>
 
-              <div className="mt-8 flex flex-wrap gap-5 text-sm font-medium text-gray-600">
+              <div className="mt-8 grid grid-cols-2 gap-4 text-sm font-medium text-[var(--text-secondary)] md:flex md:flex-wrap md:gap-5">
                 <div>✔ Handmade by Nandita</div>
                 <div>✔ Pan India Shipping</div>
                 <div>✔ Custom Orders Welcome</div>
@@ -63,7 +63,7 @@ export default function Home() {
                 alt="Handmade Mandala and Lippan wall art by Meraki by Nandita"
                 width={600}
                 height={600}
-                className="rounded-3xl shadow-2xl hover:scale-[1.02] transition-all duration-500"
+                className="w-full max-w-md md:max-w-none rounded-[28px] shadow-2xl transition-all duration-500 hover:scale-[1.02]"
               />
             </div>
           </div>
