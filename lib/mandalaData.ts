@@ -5,6 +5,7 @@ export type MandalaProduct = {
   category: string;
   description: string;
   price: number;
+  originalPrice: number;
   size: string;
   frame: string;
   medium: string;
@@ -20,8 +21,8 @@ export const mandalaArt = [
     category: "Mandala",
     description:
       "Handcrafted golden mandala artwork perfect for living rooms, bedrooms and gifting.",
-    price: 2499,
-    offerprice: 1299,
+    price: 1299,
+    originalPrice: 1699,
     size: '12" x 12"',
     frame: "Premium Wooden Frame",
     medium: "Acrylic on MDF",
@@ -45,8 +46,9 @@ export const mandalaArt = [
     category: "Mandala",
     description:
       "Elegant black and white handcrafted mandala artwork for modern interiors.",
-    price: 2499,
-    size: '10" x 10"',
+    price: 1299,
+    originalPrice: 1699,
+    size: '12" x 12"',
     frame: "Premium Wooden Frame",
     medium: "Acrylic on MDF",
     available: true,
@@ -69,8 +71,9 @@ export const mandalaArt = [
     category: "Mandala",
     description:
       "Beautiful handcrafted mandala with elegant black and pink detailing.",
-    price: 2499,
-    size: '10" x 10"',
+    price: 650,
+    originalPrice: 850,
+    size: '9" x 9"',
     frame: "Premium Wooden Frame",
     medium: "Acrylic on MDF",
     available: true,
@@ -93,8 +96,9 @@ export const mandalaArt = [
     category: "Mandala",
     description:
       "Intricately handcrafted ornate mandala artwork inspired by traditional Indian patterns.",
-    price: 2799,
-    size: '10" x 10"',
+    price: 3799,
+    originalPrice: 5999,
+    size: '21.5" x 21.5"',
     frame: "Premium Wooden Frame",
     medium: "Acrylic on MDF",
     available: true,
@@ -117,8 +121,9 @@ export const mandalaArt = [
     category: "Mandala",
     description:
       "Sacred handcrafted Swastik Mandala artwork ideal for pooja rooms and spiritual spaces.",
-    price: 2799,
-    size: '10" x 10"',
+    price: 2499,
+    originalPrice: 5999,
+    size: '20" x 20"',
     frame: "Premium Wooden Frame",
     medium: "Acrylic on MDF",
     available: true,

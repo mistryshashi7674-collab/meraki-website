@@ -143,12 +143,25 @@ export default async function ProductPage({ params }: Props) {
             <div className="mt-8 space-y-3">
               <div className="mt-10">
                 <p className="text-sm uppercase tracking-widest text-stone-500">
-                  Price
+                  Offer Price
                 </p>
 
-                <p className="mt-2 text-5xl font-bold text-pink-600">
-                  ₹{artwork.price.toLocaleString("en-IN")}
-                </p>
+                <div className="mt-3 flex items-center gap-4">
+                  <span className="text-5xl font-bold text-pink-600">
+                    ₹{artwork.price.toLocaleString("en-IN")}
+                  </span>
+
+                  <span className="text-2xl text-stone-400 line-through">
+                    ₹{artwork.originalPrice.toLocaleString("en-IN")}
+                  </span>
+                </div>
+
+                <div className="mt-4 inline-flex rounded-full bg-red-100 px-4 py-2 text-sm font-semibold text-red-600">
+                  Save ₹
+                  {(artwork.originalPrice - artwork.price).toLocaleString(
+                    "en-IN",
+                  )}
+                </div>
               </div>
               <div className="mt-8 space-y-4 ">
                 <div className="flex justify-between rounded-xl bg-stone-50 p-4 bg-[var(--surface)] border border-[var(--border)] shadow-sm">

@@ -3,6 +3,7 @@ type Props = {
     title: string;
     description: string;
     price: number;
+    originalPrice: number;
     slug: string;
     images: string[];
     available: boolean;
