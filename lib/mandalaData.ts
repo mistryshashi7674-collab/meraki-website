@@ -21,7 +21,8 @@ export const mandalaArt = [
     description:
       "Handcrafted golden mandala artwork perfect for living rooms, bedrooms and gifting.",
     price: 2499,
-    size: '10" x 10"',
+    offerprice: 1299,
+    size: '12" x 12"',
     frame: "Premium Wooden Frame",
     medium: "Acrylic on MDF",
     available: true,
