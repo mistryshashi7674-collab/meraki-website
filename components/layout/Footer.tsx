@@ -9,6 +9,8 @@ import {
   FaMapMarkerAlt,
 } from "react-icons/fa";
 
+import FadeUp from "@/components/animations/FadeUp";
+
 import { company } from "@/lib/company";
 import { socialLinks } from "@/lib/socialLinks";
 import { navigation } from "@/lib/navigation";
@@ -16,194 +18,314 @@ import { collections } from "@/lib/collections";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#111111] text-white">
+    <footer className="bg-stone-950 text-white">
+
       <div className="mx-auto max-w-7xl px-6 py-20">
-        <div className="grid gap-16 md:grid-cols-2 lg:grid-cols-4">
-          {/* Brand */}
 
-          <div>
-            <Image
-              src="/images/bwlogo.png"
-              alt={company.name}
-              width={150}
-              height={150}
-              priority
-              className="h-auto w-auto object-contain"
-            />
+        <FadeUp>
 
-            <p className="mt-6 leading-8 text-stone-300">
-              {company.description}
-            </p>
+          <div className="grid gap-16 lg:grid-cols-[1.5fr_1fr_1.2fr]">
 
-            <div className="mt-8 flex gap-4">
-              <a
-                href={socialLinks.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 transition-all duration-300 hover:-translate-y-1 hover:bg-pink-600"
-              >
-                <FaInstagram />
-              </a>
+            {/* Brand */}
 
-              <a
-                href={socialLinks.pinterest}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Pinterest"
-                className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 transition-all duration-300 hover:-translate-y-1 hover:bg-[#E60023]"
-              >
-                <FaPinterestP />
-              </a>
+            <div>
 
-              <a
-                href={socialLinks.whatsapp}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="WhatsApp"
-                className="flex h-11 w-11 items-center justify-center rounded-full bg-[#25D366] transition-all duration-300 hover:-translate-y-1 hover:scale-110"
-              >
-                <FaWhatsapp />
-              </a>
-            </div>
-          </div>
+              <Image
+                src="/images/bwlogo.png"
+                alt={company.name}
+                width={110}
+                height={110}
+                priority
+                className="h-auto w-auto object-contain opacity-95"
+              />
 
-          {/* Quick Links */}
+              <p className="mt-8 max-w-sm leading-8 text-stone-300">
+                Handcrafted wall décor inspired by tradition,
+                thoughtfully created to bring warmth,
+                elegance and personality to every home.
+              </p>
 
-          <div>
-            <h3 className="text-xl font-semibold">Quick Links</h3>
+              {/* Social */}
 
-            <ul className="mt-6 space-y-4 text-stone-300">
-              {navigation
-                .filter((item) => item.status !== "hidden")
-                .map((item) => {
-                  if (item.status !== "live") {
-                    return (
-                      <li
-                        key={item.name}
-                        className="flex items-center gap-3 opacity-60"
-                      >
-                        <span>{item.name}</span>
-
-                        {item.status === "coming-soon" && (
-                          <span className="rounded-full bg-amber-600 px-2 py-1 text-[10px] font-semibold uppercase">
-                            Soon
-                          </span>
-                        )}
-                      </li>
-                    );
-                  }
-
-                  return (
-                    <li key={item.href}>
-                      <Link
-                        href={item.href}
-                        className="transition hover:text-pink-400"
-                      >
-                        {item.name}
-                      </Link>
-                    </li>
-                  );
-                })}
-            </ul>
-          </div>
-
-          {/* Collections */}
-
-          <div>
-            <h3 className="text-xl font-semibold">Collections</h3>
-
-            <ul className="mt-6 space-y-5 text-stone-300">
-              {collections.map((collection) => {
-                if (collection.status !== "live") {
-                  return (
-                    <li
-                      key={collection.title}
-                      className="flex items-center gap-3 opacity-60"
-                    >
-                      <span>{collection.title}</span>
-
-                      <span className="rounded-full bg-amber-600 px-2 py-1 text-[10px] font-semibold uppercase">
-                        Soon
-                      </span>
-                    </li>
-                  );
-                }
-
-                return (
-                  <li key={collection.href}>
-                    <Link
-                      href={collection.href}
-                      className="transition hover:text-pink-400"
-                    >
-                      {collection.title}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-
-          {/* Contact */}
-
-          <div>
-            <h3 className="text-xl font-semibold">Contact</h3>
-
-            <div className="mt-6 space-y-6 text-stone-300">
-              {/* Address */}
-
-              <div className="flex gap-4">
-                <FaMapMarkerAlt className="mt-1 text-pink-500" />
-
-                <div>
-                  {company.city},
-                  <br />
-                  {company.state}, {company.country}
-                </div>
-              </div>
-
-              {/* Email */}
-
-              <div className="flex gap-4">
-                <FaEnvelope className="mt-1 text-pink-500" />
+              <div className="mt-10 flex gap-4">
 
                 <a
-                  href={socialLinks.email}
-                  className="transition hover:text-pink-400"
+                  href={socialLinks.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-all duration-300 hover:-translate-y-1 hover:bg-pink-600"
                 >
-                  {company.email}
+                  <FaInstagram />
                 </a>
+
+                <a
+                  href={socialLinks.pinterest}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Pinterest"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-all duration-300 hover:-translate-y-1 hover:bg-[#E60023]"
+                >
+                  <FaPinterestP />
+                </a>
+
+                <a
+                  href={socialLinks.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-[#25D366] transition-all duration-300 hover:-translate-y-1 hover:scale-110"
+                >
+                  <FaWhatsapp />
+                </a>
+
               </div>
 
-              {/* WhatsApp CTA */}
-
-              <a
-                href={socialLinks.whatsapp}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 rounded-full bg-[#25D366] px-6 py-3 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-[#1EBE5D]"
-              >
-                <FaWhatsapp />
-                Chat on WhatsApp
-              </a>
             </div>
+
+            {/* Explore */}
+
+            <div>
+
+              <h3 className="text-xl font-semibold">
+                Explore
+              </h3>
+
+              <div className="mt-8 grid gap-10 sm:grid-cols-2 lg:grid-cols-1">
+
+                {/* Navigation */}
+
+                <div>
+
+                  <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-stone-400">
+                    Pages
+                  </h4>
+
+                  <ul className="space-y-4">
+
+                    {navigation
+                      .filter((item) => item.status !== "hidden")
+                      .map((item) => {
+
+                        if (item.status !== "live") {
+                          return (
+                            <li
+                              key={item.name}
+                              className="flex items-center gap-3 text-stone-500"
+                            >
+                              <span>{item.name}</span>
+
+                              <span className="rounded-full bg-amber-100 px-2 py-1 text-[10px] font-semibold text-amber-700">
+                                Soon
+                              </span>
+
+                            </li>
+                          );
+                        }
+
+                        return (
+                          <li key={item.href}>
+
+                            <Link
+                              href={item.href}
+                              className="text-stone-300 transition hover:text-pink-400"
+                            >
+                              {item.name}
+                            </Link>
+
+                          </li>
+                        );
+
+                      })}
+
+                  </ul>
+
+                </div>
+
+                {/* Collections */}
+
+                <div>
+
+                  <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-stone-400">
+                    Collections
+                  </h4>
+
+                  <ul className="space-y-4">
+
+                    {collections.map((collection) => {
+
+                      if (collection.status !== "live") {
+                        return (
+                          <li
+                            key={collection.title}
+                            className="flex items-center gap-3 text-stone-500"
+                          >
+                            <span>{collection.title}</span>
+
+                            <span className="rounded-full bg-amber-100 px-2 py-1 text-[10px] font-semibold text-amber-700">
+                              Soon
+                            </span>
+
+                          </li>
+                        );
+                      }
+
+                      return (
+                        <li key={collection.href}>
+
+                          <Link
+                            href={collection.href}
+                            className="text-stone-300 transition hover:text-pink-400"
+                          >
+                            {collection.title}
+                          </Link>
+
+                        </li>
+                      );
+
+                    })}
+
+                  </ul>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            {/* Contact */}
+
+                        <div>
+
+              <h3 className="text-xl font-semibold">
+                Get in Touch
+              </h3>
+
+              <div className="mt-8 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
+
+                <p className="text-lg font-semibold">
+                  Need a Custom Artwork?
+                </p>
+
+                <p className="mt-3 leading-7 text-stone-300">
+                  We'd love to create something unique for your home.
+                  Reach out and we'll help you choose the perfect size,
+                  colours and design.
+                </p>
+
+                {/* Address */}
+
+                <div className="mt-8 flex items-start gap-4">
+
+                  <div className="mt-1 rounded-full bg-pink-600/20 p-2 text-pink-400">
+                    <FaMapMarkerAlt />
+                  </div>
+
+                  <div>
+
+                    <p className="font-medium text-white">
+                      Location
+                    </p>
+
+                    <p className="mt-1 text-sm leading-6 text-stone-300">
+                      {company.city},
+                      <br />
+                      {company.state}, {company.country}
+                    </p>
+
+                  </div>
+
+                </div>
+
+                {/* Email */}
+
+                <div className="mt-6 flex items-start gap-4">
+
+                  <div className="mt-1 rounded-full bg-pink-600/20 p-2 text-pink-400">
+                    <FaEnvelope />
+                  </div>
+
+                  <div>
+
+                    <p className="font-medium text-white">
+                      Email
+                    </p>
+
+                    <a
+                      href={socialLinks.email}
+                      className="mt-1 block text-sm text-stone-300 transition hover:text-pink-400"
+                    >
+                      {company.email}
+                    </a>
+
+                  </div>
+
+                </div>
+
+                {/* WhatsApp Button */}
+
+                <a
+                  href={socialLinks.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-8 flex w-full items-center justify-center gap-3 rounded-full bg-[#25D366] px-6 py-4 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#1EBE5D] hover:shadow-xl"
+                >
+                  <FaWhatsapp />
+
+                  Start Your Custom Order
+
+                </a>
+
+                <p className="mt-4 text-center text-xs text-stone-400">
+                  Usually responds within 24 hours
+                </p>
+
+              </div>
+
+            </div>
+
           </div>
-        </div>
+
+        </FadeUp>
 
         {/* Divider */}
 
-        <div className="my-14 border-t border-white/10" />
+        <div className="my-16 border-t border-white/10" />
 
         {/* Bottom */}
 
-        <div className="flex flex-col items-center justify-between gap-5 text-center text-sm text-stone-400 md:flex-row">
+        <div className="flex flex-col gap-6 text-center text-sm text-stone-400 lg:flex-row lg:items-center lg:justify-between">
+
           <p>
-            © {new Date().getFullYear()} {company.name}. All Rights Reserved.
+            © {new Date().getFullYear()} {company.name}. All rights reserved.
           </p>
 
-          <p>Handmade with ❤️ in {company.city}</p>
+          <div className="flex justify-center gap-8">
+
+            <Link
+              href="/privacy-policy"
+              className="transition hover:text-white"
+            >
+              Privacy Policy
+            </Link>
+
+            <Link
+              href="/terms"
+              className="transition hover:text-white"
+            >
+              Terms & Conditions
+            </Link>
+
+          </div>
+
+          <p>
+            Handcrafted with ❤️ in {company.city}
+          </p>
+
         </div>
+
       </div>
+
     </footer>
   );
 }
