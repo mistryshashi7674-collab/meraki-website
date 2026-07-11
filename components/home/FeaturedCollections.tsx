@@ -3,33 +3,7 @@ import Link from "next/link";
 
 import FadeUp from "@/components/animations/FadeUp";
 import Stagger, { StaggerItem } from "@/components/animations/Stagger";
-
-const collections = [
-  {
-    title: "Mandala Art",
-    description:
-      "Intricate handcrafted mandalas designed to bring peace and elegance.",
-    image: "/images/mandala/black-mandala/black-hall-room.jpg",
-    href: "/mandala-art",
-    available: true,
-  },
-  {
-    title: "Lippan Art",
-    description:
-      "Traditional mirror artwork with a contemporary touch.",
-    image: "/images/hero-art.jpg",
-    href: "/lippan-art",
-    available: false,
-  },
-  {
-    title: "Acrylic Paintings",
-    description:
-      "Unique handmade paintings for every interior style.",
-    image: "/images/hero-art.jpg",
-    href: "/acrylic-paintings",
-    available: false,
-  },
-];
+import { collections } from "@/lib/collections";
 
 export default function FeaturedCollections() {
   return (
@@ -66,7 +40,7 @@ export default function FeaturedCollections() {
 
               <StaggerItem key={item.title}>
 
-                {item.available ? (
+                {item.status === "live" ? (
 
                   <Link
                     href={item.href}
