@@ -238,13 +238,13 @@ export default function Home() {
 
           <div className="flex flex-col sm:flex-row justify-center gap-5">
             <a
-              href="https://www.instagram.com/meraki_nandita_/"
+              href="https://www.instagram.com/meraki_nandita/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-pink-500 text-white px-8 py-4 rounded-xl font-semibold hover:bg-[var(--accent)]"
             >
               <FaInstagram size={24} />
-              <span>Follow @meraki_nandita_</span>
+              <span>Follow @meraki_nandita</span>
             </a>
 
             <a
@@ -261,7 +261,7 @@ export default function Home() {
       </section>
 
       <a
-        href="https://www.instagram.com/meraki_nandita_/"
+        href="https://www.instagram.com/meraki_nandita/"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-24 right-6 bg-pink-500 text-white p-4 rounded-full shadow-lg z-50"
@@ -347,7 +347,7 @@ export default function Home() {
 
               <div className="flex gap-4">
                 <a
-                  href="https://instagram.com/meraki_nandita_"
+                  href="https://instagram.com/meraki_nandita"
                   target="_blank"
                   className="w-12 h-12 rounded-full bg-[var(--surface)]/10 flex items-center justify-center transition duration-300 hover:scale-110 hover:bg-pink-500 transition"
                 >

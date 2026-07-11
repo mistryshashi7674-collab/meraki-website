@@ -126,7 +126,7 @@ export default function RootLayout({
     priceRange: "₹₹",
 
     sameAs: [
-      "https://www.instagram.com/meraki_nandita_/",
+      "https://www.instagram.com/meraki_nandita/",
       "https://www.pinterest.com/nanditathakur29",
     ],
   };
