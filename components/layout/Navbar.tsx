@@ -4,23 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import {
-  FaWhatsapp,
-  FaInstagram,
-  FaPinterestP,
-} from "react-icons/fa";
-import {
-  HiOutlineMenuAlt3,
-  HiX,
-} from "react-icons/hi";
+import { FaWhatsapp, FaInstagram, FaPinterestP } from "react-icons/fa";
 
-const navLinks = [
-  { name: "Home", href: "/" },
-  { name: "Mandala Art", href: "/mandala-art" },
-  { name: "Lippan Art", href: "/lippan-art", comingSoon: true },
-  { name: "Shop", href: "/shop", comingSoon: true },
-  { name: "About", href: "/about" },
-];
+import { navigation } from "@/lib/navigation";
+import { socialLinks } from "@/lib/socialLinks";
+import { company } from "@/lib/company";
+import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
+
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -37,10 +27,7 @@ export default function Navbar() {
 
       setScrolled(currentScrollY > 20);
 
-      if (
-        currentScrollY > lastScrollY &&
-        currentScrollY > 120
-      ) {
+      if (currentScrollY > lastScrollY && currentScrollY > 120) {
         setShowNavbar(false);
       } else {
         setShowNavbar(true);
@@ -51,14 +38,11 @@ export default function Navbar() {
 
     window.addEventListener("scroll", handleScroll);
 
-    return () =>
-      window.removeEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
-    document.body.style.overflow = mobileMenuOpen
-      ? "hidden"
-      : "auto";
+    document.body.style.overflow = mobileMenuOpen ? "hidden" : "auto";
 
     return () => {
       document.body.style.overflow = "auto";
@@ -69,9 +53,7 @@ export default function Navbar() {
     <>
       <header
         className={`sticky top-0 z-50 transition-all duration-500 ${
-          showNavbar
-            ? "translate-y-0"
-            : "-translate-y-full"
+          showNavbar ? "translate-y-0" : "-translate-y-full"
         } ${
           scrolled
             ? "bg-[var(--surface)] backdrop-blur-xl shadow-lg border-b border-[var(--border)]"
@@ -79,20 +61,17 @@ export default function Navbar() {
         }`}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-10 lg:px-12">
-
           {/* Logo */}
 
           <Link href="/">
             <Image
               src="/images/logo.png"
-              alt="Meraki by Nandita"
+              alt={company.name}
               width={150}
               height={60}
               priority
               className={`w-[120px] md:w-[150px] transition-all duration-500 ${
-                scrolled
-                  ? "scale-95"
-                  : "scale-100"
+                scrolled ? "scale-95" : "scale-100"
               }`}
             />
           </Link>
@@ -100,48 +79,33 @@ export default function Navbar() {
           {/* Desktop Navigation */}
 
           <nav className="hidden md:flex items-center gap-10">
-
-            {navLinks.map((item) => {
-
-              const active =
-                pathname === item.href;
+            {navigation.map((item) => {
+              const active = pathname === item.href;
 
               return (
                 <Link
                   key={item.href}
-                  href={
-                    item.comingSoon
-                      ? "#"
-                      : item.href
-                  }
+                  href={item.available ? "#" : item.href}
                   className={`relative group text-[17px] tracking-[0.04em] transition ${
                     active
                       ? "text-pink-600 font-semibold"
                       : "text-[var(--text-primary)] hover:text-pink-600"
-                  } ${
-                    item.comingSoon
-                      ? "pointer-events-none opacity-60"
-                      : ""
-                  }`}
+                  } ${item.available ? "pointer-events-none opacity-60" : ""}`}
                 >
                   <div className="flex items-center gap-2">
-
                     <span>{item.name}</span>
 
-                    {item.comingSoon && (
+                    {item.available && (
                       <span className="rounded-full bg-amber-100 px-2 py-1 text-[10px] font-semibold text-amber-700">
                         Soon
                       </span>
                     )}
-
                   </div>
 
-                  {!item.comingSoon && (
+                  {!item.available && (
                     <span
                       className={`absolute left-0 -bottom-1 h-[2px] rounded-full bg-pink-500 transition-all duration-300 ${
-                        active
-                          ? "w-full"
-                          : "w-0 group-hover:w-full"
+                        active ? "w-full" : "w-0 group-hover:w-full"
                       }`}
                     />
                   )}
@@ -153,9 +117,8 @@ export default function Navbar() {
           {/* Desktop Right Side */}
 
           <div className="hidden md:flex items-center gap-5">
-
             <a
-              href="https://www.instagram.com/meraki_nandita/"
+              href={socialLinks.instagram}
               target="_blank"
               rel="noopener noreferrer"
               className="text-[var(--text-secondary)] hover:text-pink-600 transition hover:scale-110"
@@ -164,7 +127,7 @@ export default function Navbar() {
             </a>
 
             <a
-              href="https://www.pinterest.com/nanditathakur29/"
+              href={socialLinks.pinterest}
               target="_blank"
               rel="noopener noreferrer"
               className="text-[var(--text-secondary)] hover:text-red-600 transition hover:scale-110"
@@ -173,7 +136,7 @@ export default function Navbar() {
             </a>
 
             <a
-              href="https://wa.me/918007801123"
+              href={socialLinks.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 rounded-full bg-[#25D366] px-5 py-2.5 text-white transition hover:bg-[#1EBE5D]"
@@ -181,15 +144,13 @@ export default function Navbar() {
               <FaWhatsapp size={18} />
               <span>WhatsApp</span>
             </a>
-
           </div>
 
           {/* Mobile Right Side */}
 
           <div className="flex items-center gap-3 md:hidden">
-
             <a
-              href="https://wa.me/918007801123"
+              href={socialLinks.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full bg-[#25D366] p-3 text-white"
@@ -199,19 +160,15 @@ export default function Navbar() {
 
             <button
               aria-label="Open menu"
-              onClick={() =>
-                setMobileMenuOpen(true)
-              }
+              onClick={() => setMobileMenuOpen(true)}
               className="rounded-full border border-stone-200 p-3"
             >
               <HiOutlineMenuAlt3 size={24} />
             </button>
-
           </div>
-
         </div>
       </header>
-            {/* Mobile Overlay */}
+      {/* Mobile Overlay */}
 
       {mobileMenuOpen && (
         <>
@@ -232,7 +189,7 @@ export default function Navbar() {
             <div className="flex items-center justify-between border-b border-stone-200 px-6 py-5">
               <Image
                 src="/images/logo.png"
-                alt="Meraki by Nandita"
+                alt={company.name}
                 width={120}
                 height={48}
               />
@@ -249,12 +206,10 @@ export default function Navbar() {
             {/* Navigation */}
 
             <nav className="flex flex-col px-6 py-6">
-
-              {navLinks.map((item) => {
-
+              {navigation.map((item) => {
                 const active = pathname === item.href;
 
-                if (item.comingSoon) {
+                if (item.available) {
                   return (
                     <div
                       key={item.name}
@@ -286,17 +241,14 @@ export default function Navbar() {
                   </Link>
                 );
               })}
-
             </nav>
 
             {/* Bottom */}
 
             <div className="mt-auto px-6 pb-8">
-
               <div className="mb-8 flex items-center gap-6">
-
                 <a
-                  href="https://www.instagram.com/meraki_nandita/"
+                  href={socialLinks.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-stone-600 transition hover:text-pink-600"
@@ -305,18 +257,17 @@ export default function Navbar() {
                 </a>
 
                 <a
-                  href="https://www.pinterest.com/nanditathakur29/"
+                  href={socialLinks.pinterest}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-stone-600 transition hover:text-red-600"
                 >
                   <FaPinterestP size={20} />
                 </a>
-
               </div>
 
               <a
-                href="https://wa.me/918007801123"
+                href={socialLinks.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-3 rounded-full bg-[#25D366] px-6 py-4 font-semibold text-white transition hover:bg-[#1EBE5D]"
@@ -324,9 +275,7 @@ export default function Navbar() {
                 <FaWhatsapp size={20} />
                 Chat on WhatsApp
               </a>
-
             </div>
-
           </aside>
         </>
       )}
