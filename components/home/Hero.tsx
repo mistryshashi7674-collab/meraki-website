@@ -6,6 +6,7 @@ import { FaArrowRight, FaWhatsapp } from "react-icons/fa";
 import { statistics } from "@/lib/statistics";
 import FadeUp from "@/components/animations/FadeUp";
 import SlideIn from "@/components/animations/SlideIn";
+import { highlights } from "@/lib/highlights";
 
 export default function Hero() {
   return (
@@ -66,21 +67,14 @@ export default function Hero() {
 
             <FadeUp delay={0.4}>
               <div className="mt-12 grid grid-cols-2 gap-4 sm:flex sm:flex-wrap sm:gap-5">
-                <div className="rounded-full bg-white px-5 py-3 text-sm font-medium shadow-md">
-                  ✨ Handmade
-                </div>
-
-                <div className="rounded-full bg-white px-5 py-3 text-sm font-medium shadow-md">
-                  🎨 Custom Orders
-                </div>
-
-                <div className="rounded-full bg-white px-5 py-3 text-sm font-medium shadow-md">
-                  🚚 Pan India Shipping
-                </div>
-
-                <div className="rounded-full bg-white px-5 py-3 text-sm font-medium shadow-md">
-                  ⭐ Premium Quality
-                </div>
+                {highlights.map((item) => (
+                  <div
+                    key={item.text}
+                    className="rounded-full bg-white px-5 py-3 text-sm font-medium shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    {item.emoji} {item.text}
+                  </div>
+                ))}
               </div>
             </FadeUp>
 
