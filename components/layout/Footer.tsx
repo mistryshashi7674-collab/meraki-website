@@ -10,28 +10,27 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-stone-950 text-white">
-      <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10">
+    <footer className="bg-[#111111] text-white">
+      <div className="mx-auto max-w-7xl px-6 py-20">
 
-        {/* Top */}
-
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-16 md:grid-cols-2 lg:grid-cols-4">
 
           {/* Brand */}
 
           <div>
 
             <Image
-              src="/images/logo.png"
+              src="/images/bwlogo.png"
               alt="Meraki by Nandita"
-              width={170}
-              height={70}
-              className="brightness-0 invert"
+              width={150}
+              height={150}
+              priority
+              className="h-auto w-auto object-contain"
             />
 
             <p className="mt-6 leading-8 text-stone-300">
-              Handmade Mandala Art, Lippan Art and Acrylic Paintings
-              thoughtfully created to make every home beautiful.
+              Handmade Mandala Art, Lippan Art and Acrylic Paintings created
+              with passion to make every home beautiful.
             </p>
 
             <div className="mt-8 flex gap-4">
@@ -40,27 +39,27 @@ export default function Footer() {
                 href="https://www.instagram.com/meraki_nandita/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-white/10 p-3 transition hover:bg-pink-600"
+                className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 transition hover:bg-pink-600"
               >
-                <FaInstagram size={20} />
+                <FaInstagram />
               </a>
 
               <a
                 href="https://www.pinterest.com/nanditathakur29/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-white/10 p-3 transition hover:bg-red-600"
+                className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 transition hover:bg-[#E60023]"
               >
-                <FaPinterestP size={20} />
+                <FaPinterestP />
               </a>
 
               <a
                 href="https://wa.me/918007801123"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-[#25D366] p-3 transition hover:scale-110"
+                className="flex h-11 w-11 items-center justify-center rounded-full bg-[#25D366] transition hover:scale-110"
               >
-                <FaWhatsapp size={20} />
+                <FaWhatsapp />
               </a>
 
             </div>
@@ -78,26 +77,20 @@ export default function Footer() {
             <ul className="mt-6 space-y-4 text-stone-300">
 
               <li>
-                <Link href="/" className="hover:text-pink-400">
+                <Link href="/" className="transition hover:text-pink-400">
                   Home
                 </Link>
               </li>
 
               <li>
-                <Link href="/about" className="hover:text-pink-400">
-                  About
+                <Link href="/mandala-art" className="transition hover:text-pink-400">
+                  Mandala Art
                 </Link>
               </li>
 
               <li>
-                <Link href="/shop" className="hover:text-pink-400">
+                <Link href="/shop" className="transition hover:text-pink-400">
                   Shop
-                </Link>
-              </li>
-
-              <li>
-                <Link href="/contact" className="hover:text-pink-400">
-                  Contact
                 </Link>
               </li>
 
@@ -113,32 +106,32 @@ export default function Footer() {
               Collections
             </h3>
 
-            <ul className="mt-6 space-y-4 text-stone-300">
+            <ul className="mt-6 space-y-5 text-stone-300">
 
               <li>
                 <Link
                   href="/mandala-art"
-                  className="hover:text-pink-400"
+                  className="transition hover:text-pink-400"
                 >
                   Mandala Art
                 </Link>
               </li>
 
-              <li className="flex items-center gap-2 opacity-70">
+              <li className="flex items-center gap-3">
 
-                Lippan Art
+                <span>Lippan Art</span>
 
-                <span className="rounded-full bg-amber-600 px-2 py-1 text-[10px] uppercase">
+                <span className="rounded-full bg-amber-600 px-2 py-1 text-[10px] font-semibold uppercase">
                   Soon
                 </span>
 
               </li>
 
-              <li className="flex items-center gap-2 opacity-70">
+              <li className="flex items-center gap-3">
 
-                Acrylic Paintings
+                <span>Acrylic Paintings</span>
 
-                <span className="rounded-full bg-amber-600 px-2 py-1 text-[10px] uppercase">
+                <span className="rounded-full bg-amber-600 px-2 py-1 text-[10px] font-semibold uppercase">
                   Soon
                 </span>
 
@@ -156,47 +149,43 @@ export default function Footer() {
               Contact
             </h3>
 
-            <div className="mt-6 space-y-5 text-stone-300">
+            <div className="mt-6 space-y-6 text-stone-300">
 
-              <div className="flex gap-3">
+              <div className="flex gap-4">
 
                 <FaMapMarkerAlt className="mt-1 text-pink-500" />
 
-                <span>
-                  Chennai, Tamil Nadu
+                <div>
+                  Chennai,
                   <br />
-                  India
-                </span>
+                  Tamil Nadu, India
+                </div>
 
               </div>
 
-              <div className="flex gap-3">
+              <div className="flex gap-4">
 
                 <FaEnvelope className="mt-1 text-pink-500" />
 
                 <a
-                  href="mailto:hello@merakinandita.in"
-                  className="hover:text-pink-400"
+                  href="mailto:nandita296@gmail.com"
+                  className="transition hover:text-pink-400"
                 >
-                  hello@merakinandita.in
+                  Get in Touch
                 </a>
 
               </div>
 
-              <div>
+              <a
+                href="https://wa.me/918007801123"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 rounded-full bg-[#25D366] px-6 py-3 font-semibold text-white transition hover:scale-105"
+              >
+                <FaWhatsapp />
 
-                <a
-                  href="https://wa.me/918007801123"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 rounded-full bg-[#25D366] px-6 py-3 font-semibold text-white transition hover:scale-105"
-                >
-                  <FaWhatsapp />
-
-                  Chat on WhatsApp
-                </a>
-
-              </div>
+                Chat on WhatsApp
+              </a>
 
             </div>
 
@@ -206,7 +195,7 @@ export default function Footer() {
 
         {/* Divider */}
 
-        <div className="my-12 border-t border-white/10" />
+        <div className="my-14 border-t border-white/10" />
 
         {/* Bottom */}
 
@@ -216,17 +205,9 @@ export default function Footer() {
             © {new Date().getFullYear()} Meraki by Nandita. All Rights Reserved.
           </p>
 
-          <div className="flex gap-6">
-
-            <Link href="/privacy-policy" className="hover:text-white">
-              Privacy Policy
-            </Link>
-
-            <Link href="/terms" className="hover:text-white">
-              Terms & Conditions
-            </Link>
-
-          </div>
+          <p>
+            Handmade with ❤️ in Chennai
+          </p>
 
         </div>
 
