@@ -1,27 +1,33 @@
-export const navigation = [
+export type NavigationItem = {
+  name: string;
+  href: string;
+  status: "live" | "coming-soon" | "hidden";
+};
+
+export const navigation: NavigationItem[] = [
   {
     name: "Home",
     href: "/",
-    available: true,
+    status: "live",
   },
   {
     name: "Mandala Art",
     href: "/mandala-art",
-    available: true,
+    status: "live",
   },
   {
     name: "Lippan Art",
     href: "/lippan-art",
-    available: false,
+    status: "coming-soon",
   },
   {
     name: "Shop",
     href: "/shop",
-    available: false,
+    status: "coming-soon",
   },
   {
     name: "About",
     href: "/about",
-    available: false,
+    status: "coming-soon",
   },
 ];
