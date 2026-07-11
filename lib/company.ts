@@ -9,7 +9,7 @@ export const company = {
     "Handcrafted Mandala Art, Lippan Art and Acrylic Paintings made with love in Chennai.",
 
   // Website
-  website: "https://merakinandita.in",
+  website: "https://www.merakinandita.in",
 
   // Contact
   phone: "+91 80078 01123",

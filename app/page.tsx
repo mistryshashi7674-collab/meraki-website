@@ -9,6 +9,7 @@ import SEOContent from "@/components/home/SEOContent";
 import SocialSection from "@/components/home/SocialSection";
 import FAQ from "@/components/home/FAQ";
 import FAQSchema from "@/components/seo/FaqSchema";
+import HowToOrder from "@/components/home/HowToOrder";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <FeaturedCollections />
       <WhyChooseMeraki />
       <MeetArtist />
+      <HowToOrder />
       <SEOContent />
       <FAQ />
       <SocialSection />

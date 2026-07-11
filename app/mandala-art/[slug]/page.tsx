@@ -7,6 +7,10 @@ import ProductSchema from "@/components/seo/ProductSchema";
 import ProductCard from "@/components/product/ProductCard";
 import StickyWhatsAppBar from "@/components/product/StickyWhatsAppBar";
 
+export function generateStaticParams() {
+  return mandalaArt.map((artwork) => ({ slug: artwork.slug }));
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -20,7 +24,7 @@ export async function generateMetadata({
     return {};
   }
 
-  const url = `https://merakinandita.in/mandala-art/${artwork.slug}`;
+  const url = `https://www.merakinandita.in/mandala-art/${artwork.slug}`;
 
   return {
     title: `${artwork.title} | Meraki by Nandita`,
@@ -36,7 +40,7 @@ export async function generateMetadata({
       url,
       images: [
         {
-          url: `https://merakinandita.in${artwork.images[0]}`,
+          url: `https://www.merakinandita.in${artwork.images[0]}`,
         },
       ],
     },
@@ -45,7 +49,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: artwork.title,
       description: artwork.description,
-      images: [`https://merakinandita.in${artwork.images[0]}`],
+      images: [`https://www.merakinandita.in${artwork.images[0]}`],
     },
   };
 }
@@ -85,19 +89,19 @@ export default async function ProductPage({ params }: Props) {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://merakinandita.in",
+        item: "https://www.merakinandita.in",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Mandala Art",
-        item: "https://merakinandita.in/mandala-art",
+        item: "https://www.merakinandita.in/mandala-art",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: artwork.title,
-        item: `https://merakinandita.in/mandala-art/${artwork.slug}`,
+        item: `https://www.merakinandita.in/mandala-art/${artwork.slug}`,
       },
     ],
   };

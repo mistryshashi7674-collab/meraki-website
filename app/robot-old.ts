@@ -7,8 +7,8 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
     },
 
-    sitemap: "https://merakinandita.in/sitemap.xml",
+    sitemap: "https://www.merakinandita.in/sitemap.xml",
 
-    host: "https://merakinandita.in",
+    host: "https://www.merakinandita.in",
   };
 }

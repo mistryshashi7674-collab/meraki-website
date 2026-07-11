@@ -7,7 +7,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://merakinandita.in"),
+  metadataBase: new URL("https://www.merakinandita.in"),
 
   title: {
     default:
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     description:
       "Handcrafted Mandala Art, Lippan Art and Acrylic Paintings for beautiful homes.",
 
-    url: "https://merakinandita.in",
+    url: "https://www.merakinandita.in",
 
     siteName: "Meraki by Nandita",
 
@@ -103,9 +103,9 @@ export default function RootLayout({
 
     name: "Meraki by Nandita",
 
-    image: "https://merakinandita.in/images/hero-art.jpg",
+    image: "https://www.merakinandita.in/images/hero-art.jpg",
 
-    url: "https://merakinandita.in",
+    url: "https://www.merakinandita.in",
 
     telephone: "+91-8007801123",
 

@@ -20,7 +20,7 @@ export default function ProductSchema({ artwork }: Props) {
     description: artwork.description,
 
     image: artwork.images.map(
-      (image) => `https://merakinandita.in${image}`
+      (image) => `https://www.merakinandita.in${image}`
     ),
 
     brand: {
@@ -31,7 +31,7 @@ export default function ProductSchema({ artwork }: Props) {
     offers: {
       "@type": "Offer",
 
-      url: `https://merakinandita.in/mandala-art/${artwork.slug}`,
+      url: `https://www.merakinandita.in/mandala-art/${artwork.slug}`,
 
       priceCurrency: "INR",
 

@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { mandalaArt } from "@/lib/mandalaData";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://merakinandita.in";
+  const baseUrl = "https://www.merakinandita.in";
 
   return [
     {

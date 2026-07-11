@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "Discover handcrafted Mandala Art by Meraki by Nandita in Chennai. Custom wall decor, personalized mandala paintings, handmade gifts and pan India shipping.",
 
   alternates: {
-    canonical: "https://merakinandita.in/mandala-art",
+    canonical: "https://www.merakinandita.in/mandala-art",
   },
 
   openGraph: {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description:
       "Explore handcrafted Mandala Art, personalized wall decor and custom artwork made with love in Chennai.",
 
-    url: "https://merakinandita.in/mandala-art",
+    url: "https://www.merakinandita.in/mandala-art",
 
     siteName: "Meraki by Nandita",
 
@@ -65,13 +65,13 @@ export default function MandalaArtPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://merakinandita.in",
+        item: "https://www.merakinandita.in",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Mandala Art",
-        item: "https://merakinandita.in/mandala-art",
+        item: "https://www.merakinandita.in/mandala-art",
       },
     ],
   };
