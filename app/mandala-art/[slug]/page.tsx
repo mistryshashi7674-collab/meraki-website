@@ -20,7 +20,7 @@ export async function generateMetadata({
     return {};
   }
 
-  const url = `https://www.merakinandita.in/mandala-art/${artwork.slug}`;
+  const url = `https://merakinandita.in/mandala-art/${artwork.slug}`;
 
   return {
     title: `${artwork.title} | Meraki by Nandita`,
@@ -36,7 +36,7 @@ export async function generateMetadata({
       url,
       images: [
         {
-          url: `https://www.merakinandita.in${artwork.images[0]}`,
+          url: `https://merakinandita.in${artwork.images[0]}`,
         },
       ],
     },
@@ -45,7 +45,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: artwork.title,
       description: artwork.description,
-      images: [`https://www.merakinandita.in${artwork.images[0]}`],
+      images: [`https://merakinandita.in${artwork.images[0]}`],
     },
   };
 }
@@ -85,19 +85,19 @@ export default async function ProductPage({ params }: Props) {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://www.merakinandita.in",
+        item: "https://merakinandita.in",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Mandala Art",
-        item: "https://www.merakinandita.in/mandala-art",
+        item: "https://merakinandita.in/mandala-art",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: artwork.title,
-        item: `https://www.merakinandita.in/mandala-art/${artwork.slug}`,
+        item: `https://merakinandita.in/mandala-art/${artwork.slug}`,
       },
     ],
   };
@@ -131,8 +131,8 @@ export default async function ProductPage({ params }: Props) {
                 🎨 Customisable
               </span>
 
-              <span className="rounded-full bg-green-100 px-4 py-2 text-sm font-semibold text-green-700">
-                ✓ In Stock
+              <span className={`rounded-full px-4 py-2 text-sm font-semibold ${artwork.available ? "bg-green-100 text-green-700" : "bg-stone-100 text-stone-600"}`}>
+                {artwork.available ? "✓ In Stock" : "Sold Out"}
               </span>
             </div>
 
@@ -289,7 +289,7 @@ export default async function ProductPage({ params }: Props) {
             <h3 className="font-semibold text-lg">Custom Orders</h3>
 
             <p className="mt-3 text-[var(--text-secondary)]">
-              Personalise colours, sizes and designs to create a piece that's
+              Personalise colours, sizes and designs to create a piece that’s
               uniquely yours.
             </p>
           </div>
@@ -301,7 +301,7 @@ export default async function ProductPage({ params }: Props) {
           </h3>
 
           <p className="mt-4 text-[var(--text-secondary)] max-w-2xl mx-auto">
-            Share your preferred colours, size and design ideas, and we'll
+            Share your preferred colours, size and design ideas, and we’ll
             create a handcrafted artwork made exclusively for your space.
           </p>
 

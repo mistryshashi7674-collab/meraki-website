@@ -40,7 +40,7 @@ export default function SEOContent() {
           <p>
             Based in <strong>Chennai</strong>, we create handmade wall décor
             for living rooms, bedrooms, pooja rooms, offices and gifting.
-            Whether you're decorating a new home or searching for a thoughtful
+            Whether you’re decorating a new home or searching for a thoughtful
             handmade gift, each artwork is designed to become a timeless part
             of your space.
           </p>

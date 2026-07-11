@@ -5,6 +5,7 @@
   --background: #faf7f2;
   --surface: #ffffff;
   --surface-alt: #f8f5f0;
+  --hero-bg: #fff1f2;
 
   /* Brand */
   --accent: #ec4899;
@@ -35,4 +36,3 @@ body {
   color: var(--text-primary);
   font-family: Arial, Helvetica, sans-serif;
 }
-

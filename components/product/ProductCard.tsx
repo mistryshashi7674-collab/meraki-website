@@ -86,8 +86,8 @@ export default function ProductCard({
               {product.size}
             </span>
 
-            <span className="rounded-full bg-green-100 px-3 py-1 text-xs font-semibold text-green-700">
-              In Stock
+            <span className={`rounded-full px-3 py-1 text-xs font-semibold ${product.available ? "bg-green-100 text-green-700" : "bg-stone-100 text-stone-600"}`}>
+              {product.available ? "In Stock" : "Sold Out"}
             </span>
 
           </div>

@@ -84,7 +84,7 @@ export default function MeetArtist() {
 
               <p className="mt-8 text-lg leading-8 text-[var(--text-secondary)]">
 
-                Hi, I'm <strong>Nandita</strong>, the artist behind
+                Hi, I’m <strong>Nandita</strong>, the artist behind
                 <strong> Meraki by Nandita.</strong>
 
                 My journey started with a simple love for colours,
@@ -102,11 +102,11 @@ export default function MeetArtist() {
 
               <p className="mt-6 text-lg leading-8 text-[var(--text-secondary)]">
 
-                I believe beautiful art doesn't just decorate a wall—
+                I believe beautiful art doesn’t just decorate a wall—
                 it creates warmth, starts conversations and becomes
-                part of your family's story.
+                part of your family’s story.
 
-                That's why every artwork is created as if it were
+                That’s why every artwork is created as if it were
                 going into my own home.
 
               </p>
@@ -202,10 +202,10 @@ export default function MeetArtist() {
 
                 <p className="text-xl italic leading-9 text-stone-700">
 
-                  "I don't just paint artwork.
+                  “I don’t just paint artwork.
 
-                  I create pieces that become a part of someone's
-                  home, memories and everyday life."
+                  I create pieces that become a part of someone’s
+                  home, memories and everyday life.”
 
                 </p>
 
