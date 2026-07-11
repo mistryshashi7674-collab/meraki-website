@@ -1,73 +1,120 @@
+import {
+  FaPalette,
+  FaRegHeart,
+  FaShippingFast,
+  FaMedal,
+  FaPaintBrush,
+  FaHome,
+} from "react-icons/fa";
+
+import FadeUp from "@/components/animations/FadeUp";
+import Stagger, {
+  StaggerItem,
+} from "@/components/animations/Stagger";
+
 const features = [
   {
-    icon: "🌿",
-    title: "100% Handcrafted",
+    icon: <FaPalette size={30} />,
+    title: "100% Handmade",
     description:
-      "Every artwork is carefully handmade by Nandita with attention to every detail.",
+      "Every artwork is carefully handcrafted, ensuring no two pieces are exactly alike.",
   },
   {
-    icon: "🎨",
-    title: "Custom Artwork",
+    icon: <FaPaintBrush size={30} />,
+    title: "Custom Designs",
     description:
-      "Personalised designs made to match your home, office or gifting needs.",
+      "Choose your preferred colours, size and style to perfectly match your interiors.",
   },
   {
-    icon: "🚚",
-    title: "Pan India Delivery",
-    description: "Secure packaging and reliable shipping across India.",
+    icon: <FaRegHeart size={30} />,
+    title: "Made with Love",
+    description:
+      "Every brushstroke reflects passion, creativity and attention to the smallest details.",
   },
   {
-    icon: "❤️",
-    title: "Made With Love",
+    icon: <FaShippingFast size={30} />,
+    title: "Pan India Shipping",
     description:
-      "Each piece is unique and created to bring warmth and beauty into your space.",
+      "Secure packaging and reliable delivery so your artwork reaches you safely.",
+  },
+  {
+    icon: <FaHome size={30} />,
+    title: "Perfect Home Décor",
+    description:
+      "Designed to transform living rooms, bedrooms, pooja rooms and offices beautifully.",
+  },
+  {
+    icon: <FaMedal size={30} />,
+    title: "Premium Quality",
+    description:
+      "Only high-quality materials are used for long-lasting beauty and durability.",
   },
 ];
 
 export default function WhyChooseMeraki() {
   return (
-    <section className="py-16 bg-[#FFF9F5]">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center">
-          <p className="text-pink-500 font-semibold uppercase tracking-widest">
-            WHY MERAKI
-          </p>
+    <section className="bg-white py-20 sm:py-24 lg:py-28">
+      <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
 
-          <p className="mt-6 max-w-2xl mx-auto text-gray-600 text-lg">
-            Every artwork is thoughtfully handcrafted to transform ordinary
-            spaces into beautiful homes filled with personality.
-          </p>
-        </div>
+        {/* Heading */}
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
-          {features.map((feature) => (
-            <div
-              key={feature.title}
-              className="
-                bg-white
-                rounded-3xl
-                p-8
-                shadow-md
-                hover:shadow-xl
-                hover:-translate-y-2
-                transition-all
-                duration-300
-              "
-            >
-              <div className="w-16 h-16 rounded-full bg-pink-100 flex items-center justify-center text-3xl">
-                {feature.icon}
-              </div>
+        <FadeUp>
 
-              <h3 className="text-2xl font-bold text-gray-900">
-                {feature.title}
-              </h3>
+          <div className="mx-auto max-w-3xl text-center">
 
-              <p className="mt-4 text-gray-600 leading-7">
-                {feature.description}
-              </p>
-            </div>
-          ))}
-        </div>
+            <span className="inline-flex rounded-full bg-pink-100 px-4 py-2 text-sm font-semibold text-pink-700">
+              Why Choose Meraki?
+            </span>
+
+            <h2 className="mt-6 text-3xl font-bold text-[var(--text-primary)] sm:text-4xl lg:text-5xl">
+              Handmade Art That Tells Your Story
+            </h2>
+
+            <p className="mt-6 text-lg leading-8 text-[var(--text-secondary)]">
+              Every artwork is thoughtfully designed to add warmth,
+              personality and timeless beauty to your home.
+            </p>
+
+          </div>
+
+        </FadeUp>
+
+        {/* Cards */}
+
+        <Stagger>
+
+          <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+            {features.map((feature) => (
+
+              <StaggerItem key={feature.title}>
+
+                <div className="group h-full rounded-[28px] border border-stone-200 bg-[var(--surface)] p-8 transition-all duration-500 hover:-translate-y-2 hover:border-pink-200 hover:shadow-2xl">
+
+                  <div className="inline-flex rounded-2xl bg-pink-100 p-4 text-pink-600 transition duration-300 group-hover:scale-110">
+
+                    {feature.icon}
+
+                  </div>
+
+                  <h3 className="mt-6 text-2xl font-bold text-[var(--text-primary)]">
+                    {feature.title}
+                  </h3>
+
+                  <p className="mt-4 leading-8 text-[var(--text-secondary)]">
+                    {feature.description}
+                  </p>
+
+                </div>
+
+              </StaggerItem>
+
+            ))}
+
+          </div>
+
+        </Stagger>
+
       </div>
     </section>
   );

@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import FadeUp from "@/components/animations/FadeUp";
+import Stagger, { StaggerItem } from "@/components/animations/Stagger";
+
 const collections = [
   {
     title: "Mandala Art",
@@ -12,14 +15,16 @@ const collections = [
   },
   {
     title: "Lippan Art",
-    description: "Traditional mirror artwork with a contemporary touch.",
+    description:
+      "Traditional mirror artwork with a contemporary touch.",
     image: "/images/hero-art.jpg",
     href: "/lippan-art",
     available: false,
   },
   {
     title: "Acrylic Paintings",
-    description: "Unique handmade paintings for every interior style.",
+    description:
+      "Unique handmade paintings for every interior style.",
     image: "/images/hero-art.jpg",
     href: "/acrylic-paintings",
     available: false,
@@ -28,84 +33,126 @@ const collections = [
 
 export default function FeaturedCollections() {
   return (
-    <section className="py-24 bg-[var(--surface)]">
-      <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center text-gray-900">
-          Explore Our Collections
-        </h2>
+    <section className="bg-[var(--surface)] py-20 lg:py-28">
 
-        <p className="text-center text-gray-500 mt-4 max-w-2xl mx-auto">
-          Every artwork is handcrafted with love, making each piece unique and
-          timeless.
-        </p>
+      <div className="mx-auto max-w-7xl px-6">
 
-        <div className="grid md:grid-cols-3 gap-10 mt-20">
-          {collections.map((item) => {
-            const CardContent = (
-              <>
-                {/* Image */}
+        <FadeUp>
 
-                <div className="relative overflow-hidden">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    width={500}
-                    height={500}
-                    className={`w-full h-96 object-cover transition duration-700 ${
-                      item.available
-                        ? "group-hover:scale-110"
-                        : "opacity-70 grayscale-[20%]"
-                    }`}
-                  />
+          <div className="mx-auto max-w-3xl text-center">
 
-                  {!item.available && (
-                    <div className="absolute right-5 top-5 rounded-full bg-amber-500 px-4 py-2 text-sm font-semibold text-white shadow-lg">
-                      Launching Soon
-                    </div>
-                  )}
-                </div>
+            <span className="inline-flex rounded-full bg-pink-100 px-4 py-2 text-sm font-semibold text-pink-700">
+              Handmade Collections
+            </span>
 
-                {/* Content */}
+            <h2 className="mt-6 text-4xl font-bold text-gray-900 lg:text-5xl">
+              Explore Our Collections
+            </h2>
 
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold text-gray-900">
-                    {item.title}
-                  </h3>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              Every artwork is handcrafted with love, making each piece unique
+              and timeless.
+            </p>
 
-                  <p className="mt-4 text-gray-600">{item.description}</p>
+          </div>
 
-                  <div
-                    className={`mt-6 inline-flex items-center font-semibold transition ${
-                      item.available
-                        ? "text-pink-600 group-hover:translate-x-1"
-                        : "text-stone-400"
-                    }`}
+        </FadeUp>
+
+        <Stagger>
+
+          <div className="mt-20 grid gap-10 md:grid-cols-3">
+
+            {collections.map((item) => (
+
+              <StaggerItem key={item.title}>
+
+                {item.available ? (
+
+                  <Link
+                    href={item.href}
+                    className="group block overflow-hidden rounded-[32px] bg-white shadow-lg transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl"
                   >
-                    {item.available ? "Explore Collection →" : "Launching Soon"}
-                  </div>
-                </div>
-              </>
-            );
 
-            return item.available ? (
-              <Link
-                key={item.title}
-                href={item.href}
-                className="group rounded-3xl overflow-hidden bg-[var(--surface)] shadow-lg hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 block"
-              >
-                {CardContent}
-              </Link>
-            ) : (
-              <div
-                key={item.title}
-                className="rounded-3xl overflow-hidden bg-[var(--surface)] shadow-lg cursor-default"
-              >
-                {CardContent}
-              </div>
-            );
-          })}
-        </div>
+                    <div className="overflow-hidden">
+
+                      <Image
+                        src={item.image}
+                        alt={item.title}
+                        width={500}
+                        height={500}
+                        className="h-96 w-full object-cover transition duration-700 group-hover:scale-110"
+                      />
+
+                    </div>
+
+                    <div className="p-8">
+
+                      <h3 className="text-2xl font-bold">
+                        {item.title}
+                      </h3>
+
+                      <p className="mt-4 text-gray-600">
+                        {item.description}
+                      </p>
+
+                      <div className="mt-8 inline-flex items-center rounded-full border border-pink-600 px-5 py-2 font-semibold text-pink-600 transition group-hover:bg-pink-600 group-hover:text-white">
+                        Explore Collection →
+                      </div>
+
+                    </div>
+
+                  </Link>
+
+                ) : (
+
+                  <div className="group overflow-hidden rounded-[32px] bg-white shadow-lg">
+
+                    <div className="relative overflow-hidden">
+
+                      <Image
+                        src={item.image}
+                        alt={item.title}
+                        width={500}
+                        height={500}
+                        className="h-96 w-full object-cover opacity-70"
+                      />
+
+                      <div className="absolute inset-0 flex items-center justify-center">
+
+                        <span className="rounded-full bg-amber-500 px-5 py-2 text-sm font-semibold uppercase tracking-wide text-white shadow-xl">
+                          Coming Soon
+                        </span>
+
+                      </div>
+
+                    </div>
+
+                    <div className="p-8">
+
+                      <h3 className="text-2xl font-bold text-gray-900">
+                        {item.title}
+                      </h3>
+
+                      <p className="mt-4 text-gray-600">
+                        {item.description}
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                )}
+
+              </StaggerItem>
+
+            ))}
+
+          </div>
+
+        </Stagger>
+
       </div>
+
     </section>
   );
 }

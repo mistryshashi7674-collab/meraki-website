@@ -1,157 +1,221 @@
 import Image from "next/image";
-import { FaPalette, FaHeart, FaLeaf } from "react-icons/fa";
+import {
+  FaHeart,
+  FaPalette,
+  FaLeaf,
+} from "react-icons/fa";
+
+import FadeUp from "@/components/animations/FadeUp";
+import SlideIn from "@/components/animations/SlideIn";
 
 export default function MeetArtist() {
   return (
-    <section className="bg-white py-20 sm:py-24 lg:py-28">
+    <section className="bg-[#FFF9F5] py-20 sm:py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
 
         <div className="grid items-center gap-16 lg:grid-cols-2">
 
-          {/* Artist Image */}
+          {/* LEFT IMAGE */}
 
-          <div className="relative">
+          <SlideIn direction="left">
 
-            <div className="absolute -inset-5 rounded-[36px] bg-gradient-to-r from-pink-200/30 to-yellow-100/30 blur-3xl" />
+            <div className="relative">
 
-            <Image
-              src="/images/nandita.jpg"
-              alt="Nandita - Founder of Meraki by Nandita"
-              width={650}
-              height={750}
-              className="relative w-full rounded-[32px] shadow-2xl object-cover"
-            />
+              <div className="absolute -inset-5 rounded-[40px] bg-gradient-to-r from-pink-200/30 to-yellow-200/30 blur-3xl" />
 
-            {/* Floating Card */}
+              <Image
+                src="/images/nandita.jpg"
+                alt="Artist Nandita"
+                width={700}
+                height={800}
+                className="relative rounded-[36px] shadow-2xl object-cover"
+              />
 
-            <div className="absolute bottom-6 left-6 rounded-3xl bg-white/95 px-6 py-4 shadow-xl backdrop-blur">
+              {/* Floating Card */}
 
-              <p className="text-xs uppercase tracking-widest text-stone-500">
-                Founder
-              </p>
+              <div className="absolute bottom-8 left-8 rounded-3xl bg-white/95 px-6 py-5 shadow-2xl backdrop-blur">
 
-              <h3 className="mt-1 text-xl font-bold text-stone-900">
-                Nandita
-              </h3>
+                <p className="text-xs uppercase tracking-[0.3em] text-stone-500">
+                  Artist
+                </p>
 
-              <p className="text-sm text-stone-600">
-                Artist • Creator • Dreamer
-              </p>
+                <h3 className="mt-2 text-xl font-bold">
+                  Nandita
+                </h3>
+
+                <p className="text-sm text-stone-500">
+                  Founder • Meraki by Nandita
+                </p>
+
+              </div>
 
             </div>
 
-          </div>
+          </SlideIn>
 
-          {/* Content */}
+          {/* RIGHT CONTENT */}
 
           <div>
 
-            <span className="inline-flex rounded-full bg-pink-100 px-4 py-2 text-sm font-semibold text-pink-700">
-              Meet the Artist
-            </span>
+            <FadeUp>
 
-            <h2 className="mt-6 text-4xl font-bold leading-tight text-[var(--text-primary)] lg:text-5xl">
-              Every artwork begins with a blank canvas and a heartfelt story.
-            </h2>
+              <span className="inline-flex rounded-full bg-pink-100 px-4 py-2 text-sm font-semibold text-pink-700">
+                Meet the Artist
+              </span>
 
-            <p className="mt-8 text-lg leading-8 text-[var(--text-secondary)]">
-              Hi, I'm <strong>Nandita</strong>, the artist behind
-              <strong> Meraki by Nandita</strong>.
-              Every Mandala, Lippan Art and Acrylic Painting is lovingly
-              handcrafted with patience, creativity and attention to detail.
-            </p>
+            </FadeUp>
 
-            <p className="mt-6 text-lg leading-8 text-[var(--text-secondary)]">
-              My passion is creating artwork that transforms ordinary walls into
-              meaningful spaces filled with warmth, elegance and personality.
-              Every piece is unique, thoughtfully designed and can be customised
-              to match your home and your story.
-            </p>
+            <FadeUp delay={0.1}>
 
-            {/* Values */}
+              <h2 className="mt-6 text-4xl font-bold leading-tight text-[var(--text-primary)] lg:text-5xl">
 
-            <div className="mt-10 space-y-6">
+                Every Artwork Begins
+                <br />
 
-              <div className="flex items-start gap-5">
+                <span className="text-pink-600">
+                  With a Story.
+                </span>
 
-                <div className="rounded-2xl bg-pink-100 p-4 text-pink-600">
-                  <FaPalette size={22} />
-                </div>
+              </h2>
 
-                <div>
+            </FadeUp>
 
-                  <h3 className="font-bold text-xl text-stone-900">
-                    Handcrafted Excellence
-                  </h3>
+            <FadeUp delay={0.2}>
 
-                  <p className="mt-2 text-[var(--text-secondary)] leading-7">
-                    Every artwork is individually handcrafted rather than mass
-                    produced, making each creation truly one of a kind.
-                  </p>
+              <p className="mt-8 text-lg leading-8 text-[var(--text-secondary)]">
 
-                </div>
+                Hi, I'm <strong>Nandita</strong>, the artist behind
+                <strong> Meraki by Nandita.</strong>
 
-              </div>
+                My journey started with a simple love for colours,
+                patterns and handmade creations.
 
-              <div className="flex items-start gap-5">
+                Today, every Mandala, Lippan Art and Acrylic Painting
+                is carefully handcrafted with patience,
+                creativity and attention to every tiny detail.
 
-                <div className="rounded-2xl bg-yellow-100 p-4 text-yellow-600">
-                  <FaHeart size={22} />
-                </div>
+              </p>
 
-                <div>
+            </FadeUp>
 
-                  <h3 className="font-bold text-xl text-stone-900">
-                    Created with Love
-                  </h3>
+            <FadeUp delay={0.3}>
 
-                  <p className="mt-2 text-[var(--text-secondary)] leading-7">
-                    Every detail is carefully painted with patience, passion and
-                    dedication so your artwork becomes part of your home's story.
-                  </p>
+              <p className="mt-6 text-lg leading-8 text-[var(--text-secondary)]">
 
-                </div>
+                I believe beautiful art doesn't just decorate a wall—
+                it creates warmth, starts conversations and becomes
+                part of your family's story.
 
-              </div>
+                That's why every artwork is created as if it were
+                going into my own home.
 
-              <div className="flex items-start gap-5">
+              </p>
 
-                <div className="rounded-2xl bg-green-100 p-4 text-green-600">
-                  <FaLeaf size={22} />
-                </div>
+            </FadeUp>
 
-                <div>
+            {/* VALUES */}
 
-                  <h3 className="font-bold text-xl text-stone-900">
-                    Custom Designed
-                  </h3>
+            <div className="mt-12 space-y-6">
 
-                  <p className="mt-2 text-[var(--text-secondary)] leading-7">
-                    Looking for something unique? I happily create personalised
-                    artwork in your preferred colours, size and style.
-                  </p>
+              <FadeUp delay={0.4}>
+
+                <div className="flex items-start gap-5">
+
+                  <div className="rounded-2xl bg-pink-100 p-4 text-pink-600">
+                    <FaPalette size={24} />
+                  </div>
+
+                  <div>
+
+                    <h3 className="font-bold text-xl">
+                      Handcrafted Excellence
+                    </h3>
+
+                    <p className="mt-2 leading-7 text-[var(--text-secondary)]">
+                      Every piece is individually handcrafted instead
+                      of mass produced.
+                    </p>
+
+                  </div>
 
                 </div>
 
-              </div>
+              </FadeUp>
+
+              <FadeUp delay={0.5}>
+
+                <div className="flex items-start gap-5">
+
+                  <div className="rounded-2xl bg-yellow-100 p-4 text-yellow-600">
+                    <FaHeart size={24} />
+                  </div>
+
+                  <div>
+
+                    <h3 className="font-bold text-xl">
+                      Made with Passion
+                    </h3>
+
+                    <p className="mt-2 leading-7 text-[var(--text-secondary)]">
+                      Every brushstroke reflects love, patience and
+                      creativity.
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </FadeUp>
+
+              <FadeUp delay={0.6}>
+
+                <div className="flex items-start gap-5">
+
+                  <div className="rounded-2xl bg-green-100 p-4 text-green-600">
+                    <FaLeaf size={24} />
+                  </div>
+
+                  <div>
+
+                    <h3 className="font-bold text-xl">
+                      Custom Made For You
+                    </h3>
+
+                    <p className="mt-2 leading-7 text-[var(--text-secondary)]">
+                      Every artwork can be personalised to suit your
+                      home, colours and style.
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </FadeUp>
 
             </div>
 
-            {/* Quote */}
+            {/* QUOTE */}
 
-            <div className="mt-12 rounded-[28px] border border-pink-100 bg-pink-50 p-8">
+            <FadeUp delay={0.8}>
 
-              <p className="text-lg italic leading-8 text-stone-700">
-                "Art has the power to turn a house into a home. My goal is to
-                create pieces that make people smile every time they walk into a
-                room."
-              </p>
+              <div className="mt-12 rounded-[28px] border border-pink-100 bg-white p-8 shadow-lg">
 
-              <p className="mt-5 font-semibold text-pink-600">
-                — Nandita
-              </p>
+                <p className="text-xl italic leading-9 text-stone-700">
 
-            </div>
+                  "I don't just paint artwork.
+
+                  I create pieces that become a part of someone's
+                  home, memories and everyday life."
+
+                </p>
+
+                <p className="mt-6 font-semibold text-pink-600">
+                  — Nandita
+                </p>
+
+              </div>
+
+            </FadeUp>
 
           </div>
 

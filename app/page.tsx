@@ -8,11 +8,13 @@ import MeetArtist from "@/components/home/MeetArtist";
 import SEOContent from "@/components/home/SEOContent";
 import SocialSection from "@/components/home/SocialSection";
 import FAQ from "@/components/home/FAQ";
+import FAQSchema from "@/components/seo/FaqSchema";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#FFF9F5]">
-    
+
+      <FAQSchema />
       <Hero />
       <FeaturedCollections />
       <WhyChooseMeraki />
