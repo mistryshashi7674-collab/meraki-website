@@ -1,4 +1,9 @@
-export const statistics = [
+export type Statistic = {
+  value: string;
+  label: string;
+};
+
+export const statistics: Statistic[] = [
   {
     value: "100+",
     label: "Happy Customers",

@@ -3,27 +3,23 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight, FaWhatsapp } from "react-icons/fa";
-
+import { statistics } from "@/lib/statistics";
 import FadeUp from "@/components/animations/FadeUp";
 import SlideIn from "@/components/animations/SlideIn";
 
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-[var(--hero-bg)]">
-
       {/* Background Glow */}
 
       <div className="absolute -top-32 -left-24 h-96 w-96 rounded-full bg-pink-200/40 blur-3xl" />
       <div className="absolute -bottom-32 -right-24 h-96 w-96 rounded-full bg-yellow-100/40 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10 lg:py-24">
-
         <div className="grid items-center gap-16 lg:grid-cols-2">
-
           {/* LEFT */}
 
           <div>
-
             <FadeUp>
               <span className="inline-flex rounded-full bg-pink-100 px-4 py-2 text-sm font-semibold tracking-wide text-pink-700">
                 Handmade with ❤️ in Chennai
@@ -32,30 +28,22 @@ export default function Hero() {
 
             <FadeUp delay={0.1}>
               <h1 className="mt-6 text-4xl font-extrabold leading-tight tracking-tight text-[var(--text-primary)] sm:text-5xl lg:text-7xl">
-
                 Handmade
-
-                <span className="block text-pink-600">
-                  Mandala, Lippan
-                </span>
-
-                & Acrylic Art
-
+                <span className="block text-pink-600">Mandala, Lippan</span>&
+                Acrylic Art
               </h1>
             </FadeUp>
 
             <FadeUp delay={0.2}>
               <p className="mt-8 max-w-2xl text-base leading-8 text-[var(--text-secondary)] sm:text-lg lg:text-xl">
-                Transform your walls with handcrafted Mandala Art,
-                Lippan Art and Acrylic Paintings that are thoughtfully
-                designed to add warmth, elegance and personality to
-                every home.
+                Transform your walls with handcrafted Mandala Art, Lippan Art
+                and Acrylic Paintings that are thoughtfully designed to add
+                warmth, elegance and personality to every home.
               </p>
             </FadeUp>
 
             <FadeUp delay={0.3}>
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-
                 <Link
                   href="/mandala-art"
                   className="inline-flex items-center justify-center gap-3 rounded-full bg-pink-600 px-8 py-4 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-pink-700 hover:shadow-xl"
@@ -73,13 +61,11 @@ export default function Hero() {
                   <FaWhatsapp />
                   Custom Artwork
                 </a>
-
               </div>
             </FadeUp>
 
             <FadeUp delay={0.4}>
               <div className="mt-12 grid grid-cols-2 gap-4 sm:flex sm:flex-wrap sm:gap-5">
-
                 <div className="rounded-full bg-white px-5 py-3 text-sm font-medium shadow-md">
                   ✨ Handmade
                 </div>
@@ -95,54 +81,30 @@ export default function Hero() {
                 <div className="rounded-full bg-white px-5 py-3 text-sm font-medium shadow-md">
                   ⭐ Premium Quality
                 </div>
-
               </div>
             </FadeUp>
 
             <FadeUp delay={0.5}>
               <div className="mt-14 grid grid-cols-3 gap-8 border-t border-stone-200 pt-8">
+                {statistics.map((item) => (
+                  <div key={item.label}>
+                    <h3 className="text-3xl font-bold text-pink-600">
+                      {item.value}
+                    </h3>
 
-                <div>
-                  <h3 className="text-3xl font-bold text-pink-600">
-                    100+
-                  </h3>
-
-                  <p className="mt-2 text-sm text-[var(--text-secondary)]">
-                    Happy Customers
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-3xl font-bold text-pink-600">
-                    100%
-                  </h3>
-
-                  <p className="mt-2 text-sm text-[var(--text-secondary)]">
-                    Handmade
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-3xl font-bold text-pink-600">
-                    ★★★★★
-                  </h3>
-
-                  <p className="mt-2 text-sm text-[var(--text-secondary)]">
-                    Customer Rating
-                  </p>
-                </div>
-
+                    <p className="mt-2 text-sm text-[var(--text-secondary)]">
+                      {item.label}
+                    </p>
+                  </div>
+                ))}
               </div>
             </FadeUp>
-
           </div>
 
           {/* RIGHT */}
 
           <SlideIn direction="right">
-
             <div className="relative">
-
               <div className="absolute -inset-4 rounded-[40px] bg-gradient-to-r from-pink-300/20 to-yellow-200/20 blur-2xl" />
 
               <Image
@@ -156,7 +118,6 @@ export default function Hero() {
 
               <FadeUp delay={0.6}>
                 <div className="absolute bottom-6 left-6 rounded-3xl bg-white/95 px-6 py-4 shadow-xl backdrop-blur">
-
                   <p className="text-xs uppercase tracking-widest text-stone-500">
                     Featured
                   </p>
@@ -168,18 +129,12 @@ export default function Hero() {
                   <p className="mt-1 text-sm text-stone-600">
                     Designed exclusively for your home.
                   </p>
-
                 </div>
               </FadeUp>
-
             </div>
-
           </SlideIn>
-
         </div>
-
       </div>
-
     </section>
   );
 }
