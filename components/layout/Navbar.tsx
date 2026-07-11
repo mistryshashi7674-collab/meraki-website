@@ -102,7 +102,7 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center gap-5">
           <a
-            href="https://www.instagram.com/meraki_nandita_/"
+            href="https://www.instagram.com/meraki_nandita/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[var(--text-secondary)] hover:text-pink-600 transition duration-300 hover:scale-110"
