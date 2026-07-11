@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { GoogleAnalytics } from "@next/third-parties/google";
-
+import FloatingSocialButtons from "@/components/layout/FloatingSocialButtons";
+import AnnouncementBar from "@/components/layout/announcement-bar";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://merakinandita.in"),
@@ -13,16 +16,14 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Discover handmade Mandala Art, Lippan Art, Mirror Mosaic, Acrylic Paintings and custom wall decor by Nandita in Chennai. Personalized artwork, home decor and handmade gifts with Pan India delivery.",
+    "Discover handmade Mandala Art, Lippan Art, Acrylic Paintings and custom wall décor by Meraki by Nandita in Chennai. Personalised artwork, home décor and handmade gifts with Pan India shipping.",
 
   keywords: [
     "Handmade Mandala Art",
     "Mandala Art Chennai",
     "Lippan Art Chennai",
-    "Lippan Wall Decor",
     "Mirror Mosaic Art",
     "Mandala Painting",
-    "Lippan Wall Decor",
     "Custom Wall Decor",
     "Acrylic Paintings",
     "Handmade Wall Decor India",
@@ -33,15 +34,15 @@ export const metadata: Metadata = {
     "Meraki by Nandita",
   ],
 
-  authors: [{ name: "Nandita" }],
+  authors: [
+    {
+      name: "Nandita",
+    },
+  ],
 
   creator: "Nandita",
 
   publisher: "Meraki by Nandita",
-
-  verification: {
-    google: "",
-  },
 
   alternates: {
     canonical: "/",
@@ -51,7 +52,7 @@ export const metadata: Metadata = {
     title: "Meraki by Nandita",
 
     description:
-      "Handcrafted Mandala, Lippan and Canvas Art for beautiful homes.",
+      "Handcrafted Mandala Art, Lippan Art and Acrylic Paintings for beautiful homes.",
 
     url: "https://merakinandita.in",
 
@@ -66,7 +67,7 @@ export const metadata: Metadata = {
         url: "/images/hero-art.jpg",
         width: 1200,
         height: 630,
-        alt: "Handcrafted Mandala Artwork",
+        alt: "Meraki by Nandita Handmade Artwork",
       },
     ],
   },
@@ -76,7 +77,7 @@ export const metadata: Metadata = {
 
     title: "Meraki by Nandita",
 
-    description: "Handcrafted Mandala, Lippan and Canvas Art by Nandita.",
+    description: "Handcrafted Mandala Art, Lippan Art and Acrylic Paintings.",
 
     images: ["/images/hero-art.jpg"],
   },
@@ -109,12 +110,15 @@ export default function RootLayout({
     telephone: "+91-8007801123",
 
     description:
-      "Handcrafted Mandala Art, Lippan Art and custom wall décor made in Chennai.",
+      "Handcrafted Mandala Art, Lippan Art and Acrylic Paintings created in Chennai with Pan India shipping.",
 
     address: {
       "@type": "PostalAddress",
+
       addressLocality: "Chennai",
+
       addressRegion: "Tamil Nadu",
+
       addressCountry: "IN",
     },
 
@@ -127,13 +131,13 @@ export default function RootLayout({
 
     sameAs: [
       "https://www.instagram.com/meraki_nandita/",
-      "https://www.pinterest.com/nanditathakur29",
+      "https://www.pinterest.com/nanditathakur29/",
     ],
   };
 
   return (
     <html lang="en">
-      <body>
+      <body className="bg-[#FFF9F5] text-gray-900 antialiased">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -141,9 +145,19 @@ export default function RootLayout({
           }}
         />
 
-        {children}
+        <AnnouncementBar />
 
-        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID!} />
+        <Navbar />
+
+        <main>{children}</main>
+
+        <FloatingSocialButtons />
+
+        <Footer />
+
+        {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
+          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
+        )}
       </body>
     </html>
   );
